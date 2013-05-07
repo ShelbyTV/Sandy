@@ -36,7 +36,7 @@ Basic rules for creating a new prototype:
 - Each test gets its own `image directory`
 - Each test gets its own `css directory`
 
-##test/index.html
+###test/index.html
 
 - Inline the JavaScript at the bottom of the document.
 - Each "page" or "state" is denoted as an element `<form class="shelf shelf--<shelf_name>">`, this is mostly beneficial for "flows" that need click-through progression.
