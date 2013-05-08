@@ -10,6 +10,11 @@
   text-align: center;
   margin: 5em 0 0;
 }
+  .shelf .button_primer {
+    position: relative;
+    display: inline-block;
+  }
+
   .shelf .form_module {
     font-size: 1.1em;
     margin: 3em auto;
@@ -19,21 +24,49 @@
     font-size: 1.5em;
   }
 
+  .shelf .form_checkbox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -0.5em 0 0 0.5em;
+  }
+
+/*
     .shelf--init {
     }
-
+*/
+/*
     .shelf--enter_name {
     }
-        .shelf--enter_name .form_module {
+*/      .shelf--enter_name .form_module {
           text-align: left;
           width: 500px;
         }
-
+/*
     .shelf--start_tuning {
     }
+*/
 
+/*
+    .shelf--news {}
+    .shelf--news_interstitial {}
+    .shelf--sports {}
+    .shelf--sports_interstitial {}
+    .shelf--comedy {}
+    .shelf--comedy_interstitial {}
+    .shelf--gaming {}
+    .shelf--gaming_interstitial {}
+    .shelf--pop-culture {}
+    .shelf--pop-culture_interstitial {}
+    .shelf--science {}
+    .shelf--science_interstitial {}
+*/
+
+
+/*
     .shelf--time {
     }
+*/
         .shelf--time .time-input {
           font-size: 3em;
           margin: 0 auto;
@@ -44,7 +77,9 @@
           width: 90px;
         }
 
+/*
     .shelf--complete {}
+*/
         .shelf--complete .form_module {
           text-align: left;
           width: 600px;

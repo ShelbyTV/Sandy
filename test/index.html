@@ -65,7 +65,35 @@
       </div><!-- eo shelf__lining -->
     </form><!-- eo shelf -->
 
-    <form class="shelf shelf--start_tuning hidden js-next" data-go_to="time">
+    <div class="shelf shelf--start_tuning hidden js-next">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Hey Chris! Let's get to known each other.
+        </h2>
+        <p class="shelf__block">
+          Help tune your Shelby
+        </p>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              What do you like to watch NEWS video?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="news">
+              Yes
+            </button>
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="sports_interstitial">
+              No
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+
+    <form class="shelf shelf--news hidden js-next" data-go_to="sports_interstitial">
       <div class="shelf__lining">
         <h2 class="shelf__h1">
           Hey Chris! Start tuning Shelby.
@@ -73,25 +101,296 @@
 
         <div class="form_module">
           <p class="shelf__block">
-            What do you like to watch?
-          </p>
-
-          <p class="shelf__block">
             <label class="form_label">
-              Sports
+              What kind of NEWS keeps you informed?
             </label>
           </p>
 
           <p class="shelf__block">
-            <button class="button_primer button_gray button_wide js-button-toggle">
-              Extreme
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Geo-Political
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Human Interest
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> American
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
             </button>
-            <button class="button_primer button_gray button_wide js-button-toggle">
-              American
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <div class="shelf shelf--sports_interstitial hidden js-next">
+      <div class="shelf__lining">
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              Do you like to watch SPORTS?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="sports">
+              Yes
             </button>
-            <button class="button_primer button_gray button_wide js-button-toggle">
-              European
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="comedy_interstitial">
+              No
             </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+
+    <form class="shelf shelf--sports hidden js-next" data-go_to="comedy_interstitial">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Hey Chris! Start tuning Shelby.
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              What kind of SPORTS do you like to watch?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Extreme
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Team
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Dream
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <div class="shelf shelf--comedy_interstitial hidden js-next">
+      <div class="shelf__lining">
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              Do you like to watch COMEDY?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="comedy">
+              Yes
+            </button>
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="gaming_interstitial">
+              No
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+
+    <form class="shelf shelf--comedy hidden js-next" data-go_to="gaming_interstitial">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Hey Chris! Start tuning Shelby.
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              What kind of COMEDY makes you laugh?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Fart Jokes
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Satire
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Dark
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <div class="shelf shelf--gaming_interstitial hidden js-next">
+      <div class="shelf__lining">
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              Do you like to watch SPORTS?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="gaming">
+              Yes
+            </button>
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="pop-culture_interstitial">
+              No
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+
+    <form class="shelf shelf--gaming hidden js-next" data-go_to="pop-culture_interstitial">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Hey Chris! Start tuning Shelby.
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              What kind of SPORTS do you like to watch?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Extreme
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Team
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Dream
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <div class="shelf shelf--pop-culture_interstitial hidden js-next">
+      <div class="shelf__lining">
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              Do you like to keep up on POP CULTURE?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="pop-culture">
+              Yes
+            </button>
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="science_interstitial">
+              No
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+
+    <form class="shelf shelf--pop-culture hidden js-next" data-go_to="science_interstitial">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Hey Chris! Start tuning Shelby.
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              What scratches your POP CULTURE itch?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Music
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Art
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Film
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <div class="shelf shelf--science_interstitial hidden js-next">
+      <div class="shelf__lining">
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              Do you like to watch SCIENCE videos?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="science">
+              Yes
+            </button>
+            <button type="submit" class="button_primer button_gray button_wide button_command js-split-decision" data-go_to="time">
+              No
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+
+    <form class="shelf shelf--science hidden js-next" data-go_to="time">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Hey Chris! Start tuning Shelby.
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            <label class="form_label">
+              What kind of Science keeps you learning?
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> DIY
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Gadgets & Tech
+            </label>
+            <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
+              <input type="checkbox" class="form_checkbox" /> Laboratory
+            </label>
           </p>
 
           <p class="shelf__block">
@@ -146,10 +445,10 @@
           </p>
 
           <p class="shelf__block">
-            <button class="button_primer button_twitter-blue button_wide js-button-toggle">
+            <button class="button_primer button_twitter-blue button_wide one-fifth js-button-toggle">
               <span class="icon icon-twitter"></span> Twitter
             </button>
-            <button class="button_primer button_facebook-blue button_wide js-button-toggle">
+            <button class="button_primer button_facebook-blue button_wide one-fifth js-button-toggle">
               <span class="icon icon-facebook"></span> Facebook
             </button>
           </p>
@@ -265,6 +564,14 @@
       console.log(e.type,'before',User);
       User.fullname = $(this).find('#user-name').val();
       console.log('after',User);
+
+      State.DocumentState(nextSlide);
+    });
+
+    $('.js-split-decision').on('click',function(e){
+      e.preventDefault();
+      var nextSlide = $(this).data('go_to');
+      console.log($(this), nextSlide);
 
       State.DocumentState(nextSlide);
     });
