@@ -10,18 +10,52 @@
   text-align: center;
   margin: 5em 0 0;
 }
+  .shelf .form_module {
+    font-size: 1.1em;
+    margin: 3em auto;
+  }
+
+  .shelf .form_fieldset {
+    font-size: 1.5em;
+  }
+
     .shelf--init {
-
     }
+
     .shelf--enter_name {
+    }
+        .shelf--enter_name .form_module {
+          text-align: left;
+          width: 500px;
+        }
 
+    .shelf--start_tuning {
     }
-    .shelf--enter_name .form_module {
-      font-size: 1.8em;
-      margin: 3em auto;
-      text-align: left;
-      width: 500px;
+
+    .shelf--time {
     }
+        .shelf--time .time-input {
+          font-size: 3em;
+          margin: 0 auto;
+          width: 300px;
+        }
+
+        .shelf--time .time-input input {
+          width: 90px;
+        }
+
+    .shelf--complete {}
+        .shelf--complete .form_module {
+          text-align: left;
+          width: 600px;
+        }
+
+        .shelf--complete .avatar {
+          height: 150px;
+          width: 150px;
+          margin-top: 2.5em;
+          margin-right: 3em;
+        }
 
 .shelf__block {
   color: #333;

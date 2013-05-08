@@ -27,25 +27,28 @@
         <h2 class="shelf__h1">
           Shelby is really smart TV
         </h2>
+        <div class="form_module">
+          <p class="shelf__block">
+            Your personalized channel of video is waiting for you.
+          </p>
 
-        <p class="shelf__block">
-          Your personalized channel of video is waiting for you.
-        </p>
-
-        <button type="submit" class="button_primer button_green button_wide shelf__button--cta">
-          Get Started
-        </button>
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Get Started
+            </button>
+          </p>
+        </div><!-- eo form_module -->
       </div><!-- eo shelf__lining -->
     </form><!-- eo shelf -->
 
-    <form class="shelf shelf--enter_name hidden js-next" data-go_to="awesome">
+    <form class="shelf shelf--enter_name hidden js-next" data-go_to="start_tuning">
       <div class="shelf__lining">
         <h2 class="shelf__h1">
           Let's start tuning your personal channel
         </h2>
 
-        <form class="js-capture-name">
-          <p class="form_module shelf__form">
+        <div class="form_module">
+          <p class="shelf__block">
             <label for="user-name" class="form_label">
               What's your name?
             </label>
@@ -53,25 +56,171 @@
             <input type="text" id="user-name" name="user-name" class="form_input" value="" placeholder="First and Last Name" />
           </p>
 
-          <button type="submit" class="button_primer button_green button_wide shelf__button--cta">
-            Next
-          </button>
-        </form>
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module -->
       </div><!-- eo shelf__lining -->
     </form><!-- eo shelf -->
 
-    <form class="shelf shelf--awesome hidden js-next" data-go_to="">
+    <form class="shelf shelf--start_tuning hidden js-next" data-go_to="time">
       <div class="shelf__lining">
-        Awesome
+        <h2 class="shelf__h1">
+          Hey Chris! Start tuning Shelby.
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            What do you like to watch?
+          </p>
+
+          <p class="shelf__block">
+            <label class="form_label">
+              Sports
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button class="button_primer button_gray button_wide js-button-toggle">
+              Extreme
+            </button>
+            <button class="button_primer button_gray button_wide js-button-toggle">
+              American
+            </button>
+            <button class="button_primer button_gray button_wide js-button-toggle">
+              European
+            </button>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
       </div><!-- eo shelf__lining -->
     </form><!-- eo shelf -->
 
+    <form class="shelf shelf--time hidden js-next" data-go_to="socialize">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          When do you like to sit back and relax?
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            Shelby is best when you're ready to use it
+          </p>
+
+
+          <p class="shelf__block time-input">
+            <input type="number" value="07">:<input type="number" value="00">:<input type="text" value="PM">
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <form class="shelf shelf--socialize hidden js-next" data-go_to="complete">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          Do you want to know what videos your friends watch and share?
+        </h2>
+
+        <div class="form_module">
+          <p class="shelf__block">
+            What do you like to watch?
+          </p>
+
+          <p class="shelf__block">
+            <label class="form_label">
+              Connect the networks you want to see videos from
+            </label>
+          </p>
+
+          <p class="shelf__block">
+            <button class="button_primer button_twitter-blue button_wide js-button-toggle">
+              <span class="icon icon-twitter"></span> Twitter
+            </button>
+            <button class="button_primer button_facebook-blue button_wide js-button-toggle">
+              <span class="icon icon-facebook"></span> Facebook
+            </button>
+          </p>
+
+          <p class="shelf__block">
+            <button type="submit" class="button_primer button_green button_wide">
+              Next
+            </button>
+          </p>
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
+
+    <form class="shelf shelf--complete hidden js-next" data-go_to="app">
+      <div class="shelf__lining">
+        <h2 class="shelf__h1">
+          That's it! Your personal channel is ready
+        </h2>
+
+        <p class="shelf__block">
+          Watch Shelby from anywhere by filling in your details below
+        </p>
+
+        <div class="form_module">
+          <div class="media_module">
+            <div class="media_image">
+              <div class="avatar avatar--large"></div>
+              <button>Choose file…</button>
+            </div>
+
+            <div class="media_body">
+              <p class="form_fieldset">
+                <label for="username" class="form_label">
+                  Username
+                </label>
+
+                <input type="text" class="form_input" id="username" name="username" />
+              </p>
+
+              <p class="form_fieldset">
+                <label for="password" class="form_label">
+                  Password
+                </label>
+
+                <input type="text" class="form_input" id="password" name="password" placeholder="*******" />
+              </p>
+
+              <p class="form_fieldset">
+                <label for="email" class="form_label">
+                  Email
+                </label>
+
+                <input type="text" class="form_input" id="email" name="email" placeholder="email@address.com" />
+              </p>
+              <p class="form_fieldset">
+                <button type="submit" class="button_primer button_green button_wide">
+                  Next
+                </button>
+              </p>
+            </div><!-- eo media_body -->
+          </div><!-- eo media_module -->
+        </div><!-- eo form_module-->
+      </div><!-- eo shelf__lining -->
+    </form><!-- eo shelf -->
 
   </div><!-- /shelby-wrapper -->
 
   <script src="../js/jquery-2.0.0.min.js" type="text/javascript"></script>
   <script src="../js/jquery-parseparams.js" type="text/javascript"></script>
   <script src="../js/jquery-hashchange.js" type="text/javascript"></script>
+  <script src="../js/sandy-generic-interactions.js" type="text/javascript"></script>
   <script>
   $(document).ready(function(){
     User = {
