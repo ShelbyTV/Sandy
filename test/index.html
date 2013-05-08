@@ -12,7 +12,7 @@
   <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="test.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
-<body class="shelby shelby--landing">
+<body class="shelby shelby--sandy">
   <div class="shelby__wrapper">
     <header class="shelby__header clearfix" role="banner">
       <a href="/" class="button_primer shelby-logo">
@@ -24,51 +24,58 @@
 
     <form class="shelf shelf--init js-next" data-go_to="enter_name">
       <div class="shelf__lining">
-        <h2 class="shelf__h1">
-          Shelby is really smart TV
-        </h2>
-        <div class="form_module">
-          <p class="shelf__block">
+        <div class="shelf__head">
+          <h2 class="shelf__h1">
+            Shelby is really smart TV
+          </h2>
+          <h3 class="shelf__h2">
             Your personalized channel of video is waiting for you.
-          </p>
-
-          <p class="shelf__block">
-            <button type="submit" class="button_primer button_green button_wide">
-              Get Started
-            </button>
-          </p>
-        </div><!-- eo form_module -->
+          </h3>
+        </div><!-- shelf__head -->
+        </div class="shelf__body">
+          <div class="form_module">
+            <p class="shelf__block">
+              <button type="submit" class="button_primer button_green button_wide">
+                Get Started
+              </button>
+            </p>
+          </div><!-- eo form_module -->
+        </div><!-- eo shelf__body -->
       </div><!-- eo shelf__lining -->
     </form><!-- eo shelf -->
 
     <form class="shelf shelf--enter_name hidden js-next" data-go_to="start_tuning">
       <div class="shelf__lining">
-        <h2 class="shelf__h1">
-          Let's start tuning your personal channel
-        </h2>
+        <div class="shelf__head">
+          <h2 class="shelf__h1">
+            Let's start tuning your personal channel
+          </h2>
+        </div>
 
-        <div class="form_module">
-          <p class="shelf__block">
-            <label for="user-name" class="form_label">
-              What's your name?
-            </label>
+        <div class="shelf__body">
+          <div class="form_module">
+            <p class="shelf__block">
+              <label for="user-name" class="form_label">
+                What's your name?
+              </label>
 
-            <input type="text" id="user-name" name="user-name" class="form_input" value="" placeholder="First and Last Name" />
-          </p>
+              <input type="text" id="user-name" name="user-name" class="form_input" value="" placeholder="First and Last Name" />
+            </p>
+          </div><!-- eo form_module -->
 
           <p class="shelf__block">
             <button type="submit" class="button_primer button_green button_wide">
               Next
             </button>
           </p>
-        </div><!-- eo form_module -->
+        </div><!-- eo shelf__body -->
       </div><!-- eo shelf__lining -->
     </form><!-- eo shelf -->
 
     <div class="shelf shelf--start_tuning hidden js-next">
       <div class="shelf__lining">
         <h2 class="shelf__h1">
-          Hey Chris! Let's get to known each other.
+          Hey<span id="js-remember-name"></span>! Let's get to known each other.
         </h2>
         <p class="shelf__block">
           Help tune your Shelby
@@ -77,7 +84,7 @@
         <div class="form_module">
           <p class="shelf__block">
             <label class="form_label">
-              What do you like to watch NEWS video?
+              Do you like to watch NEWS video?
             </label>
           </p>
 
@@ -96,9 +103,8 @@
     <form class="shelf shelf--news hidden js-next" data-go_to="sports_interstitial">
       <div class="shelf__lining">
         <h2 class="shelf__h1">
-          Hey Chris! Start tuning Shelby.
+          &nbsp;
         </h2>
-
         <div class="form_module">
           <p class="shelf__block">
             <label class="form_label">
@@ -163,6 +169,7 @@
               What kind of SPORTS do you like to watch?
             </label>
           </p>
+
 
           <p class="shelf__block">
             <label class="button_primer button_gray button_flexible button_command one-fifth js-button-toggle">
@@ -448,25 +455,21 @@
     <form class="shelf shelf--socialize hidden js-next" data-go_to="complete">
       <div class="shelf__lining">
         <h2 class="shelf__h1">
-          Do you want to know what videos your friends watch and share?
+          Do you want to know what videos <br /> your friends watch and share?
         </h2>
 
         <div class="form_module">
           <p class="shelf__block">
-            What do you like to watch?
-          </p>
-
-          <p class="shelf__block">
             <label class="form_label">
-              Connect the networks you want to see videos from
+              Connect the networks you want to see videos from.
             </label>
           </p>
 
           <p class="shelf__block">
-            <button class="button_primer button_twitter-blue button_wide one-fifth js-button-toggle">
+            <button class="button_primer button_twitter-blue button_wide one-sixth js-social-toggle">
               <span class="icon icon-twitter"></span> Twitter
             </button>
-            <button class="button_primer button_facebook-blue button_wide one-fifth js-button-toggle">
+            <button class="button_primer button_facebook-blue button_wide one-sixth js-social-toggle">
               <span class="icon icon-facebook"></span> Facebook
             </button>
           </p>
@@ -565,10 +568,16 @@
 
         $('.shelf--'+index).toggleClass('hidden',false);
         this.updateState(index);
+        this.updateInput();
       },
 
-      updateState : function(state){
+      updateState : function(state) {
         history.pushState(null,null,'#'+state);
+      },
+
+      updateInput : function() {
+        console.log('update input');
+        $('#js-remember-name').text(' ' + User.fullname);
       }
     }
 
