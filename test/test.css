@@ -104,6 +104,14 @@
           margin-right: 3em;
         }
 
+        .shelf--complete .icon-avatar {
+          display: block;
+          font-size: 11em;
+          line-height: 1.1;
+          opacity: 0.3;
+          text-align: center;
+        }
+
 .shelf__block {
   color: #333;
 }
