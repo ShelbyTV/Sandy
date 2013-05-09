@@ -1,0 +1,119 @@
+.shelby--sandy {
+  background: #f8f8f8;
+}
+
+.shelby__header {
+  background: #222;
+}
+
+.shelf__h1 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 3.3em;
+}
+.shelf__h2 {
+  color: #222;
+  font-family: 'Helvetica';
+  padding-top: 1em;
+}
+
+.shelf {
+  margin: 5em 0 0;
+  text-align: center;
+}
+
+  .shelf .button_primer {
+    display: inline-block;
+    margin: 0.5em 0.5em;
+    position: relative;
+  }
+
+  .shelf .form_module {
+    font-size: 1.1em;
+    margin: 3em auto;
+  }
+
+  .shelf .form_fieldset {
+    font-size: 1.5em;
+  }
+
+  .shelf .form_checkbox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -0.5em 0 0 0.5em;
+  }
+
+        .shelf--enter_name .form_module {
+          text-align: left;
+          width: 500px;
+        }
+
+        .shelf--news .shelf__options {
+          width: 700px;
+          margin: 0 auto;
+        }
+
+        .shelf--entertainment .shelf__options {
+          width: 500px;
+          margin: 0 auto;
+        }
+
+        .shelf--culture .shelf__options {
+          width: 650px;
+          margin: 0 auto;
+        }
+
+        .shelf--tech-science .shelf__options {
+          width: 650px;
+          margin: 0 auto;
+        }
+
+        .shelf--sports .shelf__options {
+          width: 650px;
+          margin: 0 auto;
+        }
+
+        .shelf--time .time-input {
+          font-size: 3em;
+          margin: 0 auto;
+          width: 300px;
+        }
+
+        .shelf--time .time-input input {
+          width: 90px;
+        }
+
+        .shelf--complete .form_module {
+          text-align: left;
+          width: 600px;
+        }
+
+        .shelf--complete .avatar {
+          height: 150px;
+          width: 150px;
+          margin-top: 2.5em;
+          margin-right: 3em;
+        }
+
+        .shelf--complete .icon-avatar {
+          display: block;
+          font-size: 11em;
+          line-height: 1.1;
+          opacity: 0.3;
+          text-align: center;
+        }
+
+.shelf__block {
+  color: #333;
+}
+
+.shelf__options {
+  /*text-align: left;*/
+  clear: both;
+}
+
+.shelf__options .button_command {
+  text-align: center;
+  width: 200px;
+}
