@@ -574,12 +574,16 @@
     R = '';
     //hooks
     $('.js-next').on('submit',function(e){
+      User.opts = [];
 
       _.each($('input[type="checkbox"]'), function(a,b){
         User.opts.push([a.name,a.checked]);
       });
+
       User.fullname = $(this).find('#user-name').val();
       State.updateInput();
+
+      localStorage.setItem(User.fullname, JSON.stringify(User));
     });
 
     $('.js-split-decision').on('click',function(e){
