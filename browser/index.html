@@ -1,0 +1,254 @@
+<!doctype html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# shelbytv: http://ogp.me/ns/fb/shelbytv#" profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <title>shelby.tv | browser stats</title>
+  <link href="../fonts/icon/style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="local.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="../js/modernizr.custom.25994.js" type="text/javascript"></script>
+</head>
+<body class="shelby shelby--sandy">
+  <div class="shelby__wrapper">
+    <header class="shelby__header clearfix" role="banner">
+      <a href="/" class="button_primer shelby-logo">
+        <h1 class="shelby_logo shelby_logo--inverted">
+          <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
+        </h1>
+      </a>
+    </header>
+
+    <div class="shelf shelf--init">
+      <div class="shelf__lining">
+        <div class="shelf__head">
+          <h2 class="shelf__h1">
+            Browser Stats
+          </h2>
+        </div><!-- shelf__head -->
+
+        <div class="shelf__body">
+          <table class="stats stats--wide stats--normal">
+            <colgroup span="2">
+              <col width="100"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">
+                  media
+                </th>
+              </tr>
+              <tr>
+                <th class="stats__key">key</th>
+                <th class="stats__val">val</th>
+              </tr>
+            </thead>
+            <tbody id="stats-location">
+            </tbody>
+          </table>
+
+          <table class="stats stats--wide stats--normal">
+            <colgroup span="2">
+              <col width="100"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">
+                  media
+                </th>
+              </tr>
+              <tr>
+                <th class="stats__key">key</th>
+                <th class="stats__val">val</th>
+              </tr>
+            </thead>
+            <tbody id="stats-highlevel">
+            </tbody>
+          </table>
+
+          <table class="stats stats--wide stats--normal">
+            <colgroup span="2">
+              <col width="100"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">
+                  navigator
+                </th>
+              </tr>
+              <tr>
+                <th class="stats__key">key</th>
+                <th class="stats__val">val</th>
+              </tr>
+            </thead>
+            <tbody id="stats-navigator">
+            </tbody>
+          </table>
+
+          <table class="stats">
+            <colgroup span="2">
+              <col width="100"/>
+              <col width="50"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">
+                  window
+                </th>
+              </tr>
+              <tr>
+                <th class="stats__key">key</th>
+                <th class="stats__val">val</th>
+              </tr>
+            </thead>
+            <tbody id="stats">
+            </tbody>
+          </table>
+
+          <table class="stats">
+            <colgroup span="2">
+              <col width="100"/>
+              <col width="50"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">
+                  window.screen
+                </th>
+              </tr>
+              <tr>
+                <th class="stats__key">key</th>
+                <th class="stats__val">val</th>
+              </tr>
+            </thead>
+            <tbody id="stats-screen">
+            </tbody>
+          </table>
+
+          <table class="stats stats--normal">
+            <colgroup>
+              <col width="100"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">
+                  modernizr
+                </th>
+              </tr>
+              <tr>
+                <th class="stats__key">tests</th>
+              </tr>
+            </thead>
+            <tbody id="stats-modernizr">
+            </tbody>
+          </table>
+        </div><!-- eo shelf__body -->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelf -->
+  </div><!-- /shelby-wrapper -->
+
+  <script src="../js/underscore.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-2.0.0.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-parseparams.js" type="text/javascript"></script>
+  <script src="../js/jquery-hashchange.js" type="text/javascript"></script>
+  <script src="../js/sandy-generic-interactions.js" type="text/javascript"></script>
+  <script>
+
+  var row = function(obj) {
+    return '<tr><td class="stats__key">'+obj.b+':</td><td class="stats__val">'+obj.a+'</td></tr>';
+  }
+
+  $(document).ready(function(){
+    var $stats          = $('#stats'),
+        $statsScreen    = $('#stats-screen'),
+        $statsModernizr = $('#stats-modernizr'),
+        $statsHighLevel = $('#stats-highlevel'),
+        $statsNavigator = $('#stats-navigator'),
+        $statsLocation  = $('#stats-location');
+
+        var statsScreen = {
+          screenLeft: window.screenLeft,
+          screenTop:  window.screenTop,
+          screenX: window.screenX,
+          screenY:  window.screenY,
+          scrollX: window.scrollX,
+          scrollY: window.scrollY
+        };
+
+    _(window.screen).each(function(a,b){
+      console.log(a,b);
+
+      var obj = {};
+          obj.a = a;
+          obj.b = b;
+
+      $statsScreen.append(row(obj));
+    });
+
+    _(statsScreen).each(function(a,b){
+      console.log(a,b);
+
+      var obj = {};
+          obj.a = a;
+          obj.b = b;
+
+      $statsScreen.append(row(obj));
+    });
+
+
+    var stuff = {
+      innerWidth       : window.innerWidth,
+      outerWidth       : window.outerWidth,
+      innerHeight      : window.innerHeight,
+      outerHeight      : window.outerHeight,
+      devicePixelRatio : window.devicePixelRatio
+    }
+
+
+
+    _(stuff).each(function(a,b){
+      var obj = {};
+          obj.a = a;
+          obj.b = b;
+
+      $stats.append(row(obj));
+    });
+
+    $statsModernizr.append('<tr><td class="stats__val">'+ ($('html').attr('class').split(' ').join(' <br />')) + '</td></tr>');
+
+
+    var highLevel = {
+      styleMedia : window.styleMedia.type
+
+    }
+
+
+    _(highLevel).each(function(a,b){
+      var obj = {};
+          obj.a = a;
+          obj.b = b;
+
+      $statsHighLevel.append(row(obj));
+    });
+
+    _(window.navigator).each(function(a,b){
+      var obj = {};
+          obj.a = a;
+          obj.b = b;
+
+      $statsNavigator.append(row(obj));
+    });
+
+    _(window.location).each(function(a,b){
+      var obj = {};
+          obj.a = a;
+          obj.b = b;
+
+      $statsLocation.append(row(obj));
+    });
+  });
+</script>
+
+</body>
+</html>

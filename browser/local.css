@@ -1,0 +1,101 @@
+/*-------------------------Boilerplate stuff ---------------------------------*/
+.shelby--sandy {
+  background: #f8f8f8;
+  bottom: auto;
+  left: auto;
+  position: relative;
+  top: auto;
+  right: auto;
+  overflow: visible;
+}
+
+.shelby__header {
+  /*background: #222;*/
+}
+/*-------------------------End Boilerplate stuff -----------------------------*/
+
+/*
+
+    Shelf Block
+    Each Shelf is a new 'page'
+
+    .shelf--[page_name] hooks into the URL hash state: localhost/Sandy/sample/#page_name
+
+*/
+.shelf {
+}
+
+.shelf__lining {
+  /*border: 1px solid red;*/
+  margin: 0 auto;
+  width: 500px;
+}
+    /* modifiers */
+    .shelf--init {}
+    .shelf--foo_bar {}
+
+/*
+
+    Elements
+    Stylings common to the entire test.
+
+*/
+.shelf__h1 {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+}
+.shelf__h2 {
+  color: #222;
+  font-family: 'Helvetica';
+  padding-top: 1em;
+}
+
+.shelf__block {
+  color: #333;
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+.stats {
+  line-height: 1.5;
+  float: left;
+  font-size: 1.2em;
+  margin: 1em;
+}
+  .stats--wide {
+    float: none;
+    width: 100%;
+  }
+  .stats--normal .stats__key,
+  .stats--normal .stats__val {
+    text-align: left;
+  }
+
+.stats td,
+.stats th {
+  padding: 0.5em;
+}
+
+.stats th {
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.stats__key {
+  background: rgba(0,0,0,.1);
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 2px;
+  }
+
+.stats__val {
+  background: rgba(255,255,255,1);
+  text-align: right;
+  }
+
+  #stats-modernizr .stats__key,
+  #stats-modernizr .stats__val {
+    text-align: left;
+  }
