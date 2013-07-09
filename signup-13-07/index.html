@@ -63,7 +63,7 @@
             <ul class="list list--benefits">
               <li class="benefit benefit--smart icon-roll">
                 <h2>Smart Recommendations</h2>
-                <p>Our recommendations get better as you and your friends Like, Share, and watch vide on Shelby.</p>
+                <p>Our recommendations get better as you and your friends Like, Share, and watch video on Shelby.</p>
               </li>
 
               <li class="benefit benefit--share icon-facebook">
@@ -188,6 +188,50 @@
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
           <div id="guide">
+            <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item js-frame-social">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - " get="" lucky"="" -="" bass="" cover"="">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link" data-user_nickname="jhubball"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
+
             <div class="loading hidden js-social-loading">
               <img src="images/loading-explore.gif" class="loading__spinner" />
 
@@ -253,7 +297,49 @@
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
           <div id="guide">
-            <!-- content filled in by GuideContentView -->
+            <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item js-frame-sources">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - " get="" lucky"="" -="" bass="" cover"="">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link" data-user_nickname="jhubball"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
           </div>
         </div>
       </section><!-- eo .guide-wrapper -->
@@ -530,6 +616,8 @@
       $socialLoading
         .toggleClass('hidden loading--facebook',false)
         .toggleClass('loading--twitter',true);
+
+      $('.js-frame-social').toggleClass('hidden',true);
     });
 
     $('.js-connect-facebook').on('click',function(){
@@ -537,6 +625,8 @@
       $socialLoading
         .toggleClass('hidden loading--twitter',false)
         .toggleClass('loading--facebook',true);
+
+      $('.js-frame-social').toggleClass('hidden',true);
     });
   });
 </script>
