@@ -113,6 +113,7 @@ p {
 */
 
 .avatar--tiny {
+  border: none;
   display: inline-block;
   height: 2em;
   margin-right: 0.5em;

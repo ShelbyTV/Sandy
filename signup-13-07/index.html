@@ -115,8 +115,8 @@
             </li>
 
             <li class="dropdown_module list__item secondary-item js-guide-settings">
-              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event" data-ga_category="Header" data-ga_action="Settings" data-ga_label="matyus">
-                <span style="background-image: url('//s3.amazonaws.com/shelby-gt-user-avatars/sq48x48/4f370fe2ad9f115a1000011c?1370453398000');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="//s3.amazonaws.com/shelby-gt-user-avatars/sq48x48/4f370fe2ad9f115a1000011c?1370453398000" class="visuallyhidden"></span>
+              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event">
+                <span style="background-image: url('images/avatar.png');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="images/avatar.png" class="visuallyhidden"></span>
                   <span class="label js-username">matyus</span>
                   <span class="icon-carrot"></span>
               </button>
@@ -649,9 +649,16 @@
 
     State.DocumentState();
 
+    var $usernameLabel = $('.js-username');
+
+
     $('.js-next').on('submit',function(){
       //basic handling already applied: sandy-generic-interations.js
       //this class should be attached to a shelf that is a <form>
+
+      //fired on signup form submit, update entered username for in-app realness
+      var nickname = $('#nickname').val();
+      $usernameLabel.html(nickname);
     });
 
     $('.js-split-decision').on('click',function(){
