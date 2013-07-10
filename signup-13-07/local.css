@@ -5,6 +5,7 @@
 
 .shelby__header {
   background: #222;
+  text-align: left;
 }
 
 .videoplayer__wrapper {
@@ -60,6 +61,9 @@ p {
         .shelf--init .form_error {
           display: none;
         }
+        .shelf--init .form__description {
+          font-size: 0.8em;
+        }
         /*  benefits  */
         .list--benefits {
           margin-top: 2em;
@@ -77,7 +81,9 @@ p {
     .shelf--in_app_social {}
 
     .shelf--in_app_follow_sources {}
-
+    .shelf--in_app_follow_sources .modal {
+      width: 500px;
+    }
 /*
 
     Elements
@@ -102,9 +108,17 @@ p {
 
 /*
 
-    form fixes
+    avatar
 
 */
+
+.avatar--tiny {
+  display: inline-block;
+  height: 2em;
+  margin-right: 0.5em;
+  width: 2em;
+  vertical-align: middle;
+}
 
 
 /*
@@ -179,10 +193,12 @@ p {
 
 .source_card__h1 {
   font-size: 1em;
-  margin-top: 0.5em;
+  margin-top: 0.75em;
 }
 
-.source_card__block {}
+.source_card__block {
+  font-size: 0.875em;
+}
 
 .source_card__button {
   margin: 0.5em 0.5em 0;
