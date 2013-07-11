@@ -571,6 +571,8 @@
 
     State.DocumentState();
 
+    $('.form_input').on('blur',function(){ $(this).attr('required','required'); });
+
     // lazy hack to disable logo clicks
     $('.shelby-logo').on('click',function(){return false;});
 
@@ -589,6 +591,7 @@
       //basic handling already applied: sandy-generic-interations.js
     //attached to specific buttons. to progress to new 'pages'
     });
+
 
     var $socialLoading = $('.js-social-loading'),
         $streamFilled  = $('.js-stream');
@@ -644,6 +647,8 @@
         Cards.push(_.template(SourceCard,source));
       });
     });
+
+    Cards.push('<li style="text-align:center;padding-top:1em;"><button class="button_primer button_command button_command--flexible button_gray">Show More…</button>');
     // append list to DOM
     $('.js-list-sources').html(Cards);
 
