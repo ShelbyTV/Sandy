@@ -97,7 +97,7 @@
         <div>
           <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
             <li class="list__item">
-              <button class="app_nav__button js-stream js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
                 Stream
               </button>
             </li>
@@ -132,7 +132,7 @@
           <div id="guide">
             <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item">
               <a href="#" onclick="return false;" class="frame-header js-frame-activate">
-                <h1 class="frame-title" title="Daft Punk - " get="" lucky"="" -="" bass="" cover"="">
+                <h1 class="frame-title" title="Daft Punk - ">
                  Daft Punk - "Get Lucky" - Bass Cover
                 </h1>
               </a>
@@ -217,7 +217,7 @@
         <div>
           <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
             <li class="list__item">
-              <button class="app_nav__button js-stream js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
                 Stream
               </button>
             </li>
@@ -251,7 +251,7 @@
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
           <div id="guide">
-            <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item js-frame-social">
+            <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-social">
               <a href="#" onclick="return false;" class="frame-header js-frame-activate">
                 <h1 class="frame-title" title="Daft Punk - ">
                  Daft Punk - "Get Lucky" - Bass Cover
@@ -307,60 +307,8 @@
               </p>
             </div><!-- eo loading block -->
 
-          <ul class="list">
-            <li class="list__item">
-              <!-- videocard -->
-
-              <article id="51dcb74d88ba6b6544105613" class="animate_module frame frame-list-item">
-                <a href="#" onclick="return false;" class="frame-header js-frame-activate">
-                  <h1 class="frame-title" title="Pacific Rim - ">Pacific Rim - "Second Chances" Trailer
-                  </h1>
-                </a>
-
-                <div class="frame-body-wrapper clearfix">
-                  <div class="frame-body">
-                    <!-- TODO: should maybe use the thumbnail module JST -->
-                    <a href="#" onclick="return false;" class="image_module frame-thumbnail js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" style="background-image: url('http://i1.ytimg.com/vi/p8pru0Pc0go/0.jpg');" role="img">
-                      <img class="visuallyhidden" src="http://i1.ytimg.com/vi/p8pru0Pc0go/0.jpg" title="Pacific Rim - ">
-                    </a>
-                  </div><!-- eo .frame-body -->
-                  <footer class="media_module frame-footer clearfix">
-                    <a href="#" onclick="return false;" class="js-goto-user-page" data-user_nickname="LegendaryEnt">
-                      <span class="image_module xuser-avatar xuser-avatar--twitter icon-twitter media_image" style="background-image: url(http://a0.twimg.com/profile_images/1417967094/icon_normal.jpg);" role="img">
-                        <img src="http://a0.twimg.com/profile_images/1417967094/icon_normal.jpg" class="visuallyhidden" title="LegendaryEnt" alt="LegendaryEnt">
-                      </span>
-                    </a>
-
-                    <div class="media_body">
-                      <span class="xuser-data-timestamp">
-                         Jul 10
-                      </span>
-
-                      <p class="xuser-data">
-                        <a href="#" onclick="return false;" class="js-goto-user-page no-faux-link" data-user_nickname="LegendaryEnt"><strong>LegendaryEnt</strong></a>
-                        via <span class="capitalize">twitter</span>
-                      </p>
-
-                      <p class="xuser-message">
-                        RT @idriselba: Big week for #PacificRim! Tonight LA premiere. Friday US release. Right now: new trailer. <a href="http://t.co/t0Hm4eiClH" title="Go to external link http://t.co/t0Hm4eiClH" target="blank" class="js-track-event" data-ga_category="Frame" data-ga_action="Click on link in comment" data-ga_label="anonymous">http://t.co/t0Hm4eiClH</a>
-                      </p>
-                    </div><!-- eo .media_body -->
-                  </footer><!-- eo .media_module-->
-                </div><!-- eo .frame-body-wrapper -->
-
-                <div class="frame-likes frame-external-subline icon-like icon-like--red js-frame-likes">
-                  <ul class="list frame-likes-avatars js-liker-avatars-list">
-                    <li>
-                      <a class="frame-likes-link js-actor-avatar-link js-track-event" href="#" data-ga_category="Frame" data-ga_action="click avatar for liker" data-ga_label="elancers">
-                        <img class="frame-likes-avatar" src="http://a0.twimg.com/profile_images/1305229121/Michael-2000_Rev_.jpg" title="elancers" alt="elancers">
-                      </a>
-                    </li>
-                  </ul>
-                </div><!-- eo frame-likes -->
-              </article>
-              <!-- end new videocard -->
-            </li>
-          </ul>
+            <ul class="list js-stream hidden">
+            </ul>
           </div><!-- eo guide -->
         </div>
       </section><!-- eo .guide-wrapper -->
@@ -390,13 +338,13 @@
               <span class="button_label">Twitter</span>
             </button>
 
-            <p class="modal__block" style="font-size: 10px;margin: 1em 0;color: #666;">
+            <p class="modal__block" style="font-size: 10px;margin: 1em 0 0;color: #666;">
               We won't post on Facebook/Twitter without <br>your permission and we don't spam.
             </p>
           </div><!-- eo modal body -->
 
           <div class="modal__foot">
-            <button class="button_primer button_command button_command--flexible button_command--sub button_gray button_active js-split-decision" data-go_to="in_app_follow_sources">Skip</button>
+            <button class="button_primer button_command button_command--flexible button_command--sub button_gray button_active js-split-decision js-skip-social" data-go_to="in_app_follow_sources">Skip</button>
           </div><!-- eo modal foot -->
         </div><!-- eo modal block -->
       </div><!-- eo modal__wrapper -->
@@ -417,7 +365,7 @@
         <div>
           <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
             <li class="list__item">
-              <button class="app_nav__button js-stream js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
                 Stream
               </button>
             </li>
@@ -451,7 +399,7 @@
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
           <div id="guide">
-            <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item js-frame-sources">
+            <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-sources">
               <a href="#" onclick="return false;" class="frame-header js-frame-activate">
                 <h1 class="frame-title" title="Daft Punk - " get="" lucky"="" -="" bass="" cover"="">
                  Daft Punk - "Get Lucky" - Bass Cover
@@ -494,6 +442,12 @@
                 </ul>
               </div><!-- eo frame-likes -->
             </article>
+
+
+            <ul class="list js-stream hidden">
+              <!-- filled in by underscore templating -->
+            </ul>
+
           </div>
         </div>
       </section><!-- eo .guide-wrapper -->
@@ -520,7 +474,7 @@
           </div><!-- eo modal body -->
 
           <div class="modal__foot">
-            <button class="button_primer button_command button_command--flexible button_green js-split-decision" data-go_to="in_app_x">Start Watching</button>
+            <a href="http://shelby.tv/community" class="button_primer button_command button_command--flexible button_green">Start Watching</a>
           </div><!-- eo modal foot -->
         </div><!-- eo modal block -->
       </div><!-- eo modal__wrapper -->
@@ -547,19 +501,75 @@
     </li>
   </script>
 
+  <script id="abstractFrame" type="text/template">
+    <article id="51dcb74d88ba6b6544105613" class="animate_module frame frame-list-item">
+      <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+        <h1 class="frame-title" title="Pacific Rim - ">
+          <%= video.title %>
+        </h1>
+      </a>
+
+      <div class="frame-body-wrapper clearfix">
+        <div class="frame-body">
+          <!-- TODO: should maybe use the thumbnail module JST -->
+          <a href="#" onclick="return false;" class="image_module frame-thumbnail js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" style="background-image: url(<%= video.thumbnail_url %>);" role="img">
+            <img class="visuallyhidden" src="http://i1.ytimg.com/vi/p8pru0Pc0go/0.jpg" title="Pacific Rim - ">
+          </a>
+        </div><!-- eo .frame-body -->
+        <footer class="media_module frame-footer clearfix">
+          <a href="#" onclick="return false;" class="js-goto-user-page" data-user_nickname="LegendaryEnt">
+            <span class="image_module xuser-avatar xuser-avatar--twitter icon-twitter media_image" style="background-image: url(<%= frame.creator.user_image %>);" role="img">
+              <img src="http://a0.twimg.com/profile_images/1417967094/icon_normal.jpg" class="visuallyhidden" title="LegendaryEnt" alt="LegendaryEnt">
+            </span>
+          </a>
+
+          <div class="media_body">
+            <span class="xuser-data-timestamp">
+               Jul 10
+            </span>
+
+            <p class="xuser-data">
+              <a href="#" onclick="return false;" class="js-goto-user-page no-faux-link" data-user_nickname="LegendaryEnt"><strong><%= frame.creator.nickname %></strong></a>
+              via <span class="capitalize">twitter</span>
+            </p>
+
+            <p class="xuser-message">
+              RT @idriselba: Big week for #PacificRim! Tonight LA premiere. Friday US release. Right now: new trailer. <a href="http://t.co/t0Hm4eiClH" title="Go to external link http://t.co/t0Hm4eiClH" target="blank" class="js-track-event" data-ga_category="Frame" data-ga_action="Click on link in comment" data-ga_label="anonymous">http://t.co/t0Hm4eiClH</a>
+            </p>
+          </div><!-- eo .media_body -->
+        </footer><!-- eo .media_module-->
+      </div><!-- eo .frame-body-wrapper -->
+
+      <div class="frame-likes frame-external-subline icon-like icon-like--red js-frame-likes">
+        <ul class="list frame-likes-avatars js-username-liker-avatars-list">
+          <li>
+            <a class="frame-likes-link js-actor-avatar-link js-track-event" href="#" data-ga_category="Frame" data-ga_action="click avatar for liker" data-ga_label="elancers">
+              <img class="frame-likes-avatar" src="http://a0.twimg.com/profile_images/1305229121/Michael-2000_Rev_.jpg" title="elancers" alt="elancers">
+            </a>
+          </li>
+        </ul>
+      </div><!-- eo frame-likes -->
+    </article>
+    <!-- end newvideocard -->
+    </script>
+
+
   <script src="../js/underscore.min.js" type="text/javascript"></script>
   <script src="../js/jquery-2.0.0.min.js" type="text/javascript"></script>
   <script src="../js/jquery-parseparams.js" type="text/javascript"></script>
   <script src="../js/jquery-hashchange.js" type="text/javascript"></script>
   <script src="../js/sandy-generic-interactions.js" type="text/javascript"></script>
+
+  <!-- dummy data -->
   <script src="js/signup.yml.js" type="text/javascript"></script>
+  <script src="js/dashboard.js" type="text/javascript"></script>
+
   <script>
   $(document).ready(function(){
 
     State.DocumentState();
 
     var $usernameLabel = $('.js-username');
-
 
     $('.js-next').on('submit',function(){
       //basic handling already applied: sandy-generic-interations.js
@@ -575,7 +585,8 @@
     //attached to specific buttons. to progress to new 'pages'
     });
 
-    var $socialLoading = $('.js-social-loading');
+    var $socialLoading = $('.js-social-loading'),
+        $streamFilled  = $('.js-stream');
 
     var loadStream;
 
@@ -591,6 +602,9 @@
         $socialLoading.toggleClass('hidden',true);
         $streamFilled.toggleClass('hidden',false);
         window.clearTimeout(loadStream);
+
+        $('.js-skip-social').trigger('click');
+        $('.js-abstract-frame').toggleClass('hidden',true);
       }, 2000);
     });
 
@@ -601,6 +615,19 @@
         .toggleClass('loading--facebook',true);
 
       $('.js-frame-social').toggleClass('hidden',true);
+
+      loadStream = window.setTimeout(function(){
+        $socialLoading.toggleClass('hidden',true);
+        $streamFilled.toggleClass('hidden',false)
+                     .find('.xuser-avatar--twitter')
+                       .toggleClass('xuser-avatar--twitter xuser-avatar--facebook icon-twitter icon-facebook');
+
+        window.clearTimeout(loadStream);
+
+        $('.js-skip-social').trigger('click');
+        $('.js-abstract-frame').toggleClass('hidden',true);
+      }, 2000);
+
     });
 
     // setup sources list
@@ -614,6 +641,19 @@
     });
     // append list to DOM
     $('.js-list-sources').html(Cards);
+
+    // setup stream list
+    var AbstractFrame = $('#abstractFrame').html(),
+        Frames = [];
+    // build sources list
+    _(Dashboard.result).each(function(frame,index){
+      if(frame.frame && frame.frame.video) {
+      console.log(frame.frame);
+        Frames.push(_.template(AbstractFrame,{video: frame.frame.video, frame: frame.frame}));
+      }
+    });
+    // append list to DOM
+    $('.js-stream').html(Frames);
   });
 </script>
 
