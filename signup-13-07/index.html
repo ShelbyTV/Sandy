@@ -88,7 +88,7 @@
 
   <div class="shelf shelf--in_app_welcome hidden">
     <header class="shelby__header clearfix" role="banner">
-      <a href="/" class="button_primer shelby-logo">
+      <a href="#" class="button_primer shelby-logo">
         <h1 class="shelby_logo">
           <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
         </h1>
@@ -186,7 +186,7 @@
         <div class="modal fin fin--left_top">
           <div class="modal__body">
             <h3 class="modal__h1">
-              Welcome to your single stream of video
+              Welcome to your perfect stream of video
             </h3>
 
             <p class="modal__block">
@@ -208,7 +208,7 @@
 
   <div class="shelf shelf--in_app_social hidden">
     <header class="shelby__header clearfix" role="banner">
-      <a href="/" class="button_primer shelby-logo">
+      <a href="#" class="button_primer shelby-logo">
         <h1 class="shelby_logo">
           <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
         </h1>
@@ -324,7 +324,7 @@
               Discover video you had no idea you were missing
             </h3>
 
-            <p class="modal__block">
+            <p class="modal__block" style="margin-bottom: 1.5em;">
               Connect Facebook and Twitter and we'll find videos your friends are already sharing but you might be missing.
             </p>
 
@@ -338,7 +338,7 @@
               <span class="button_label">Twitter</span>
             </button>
 
-            <p class="modal__block" style="font-size: 10px;margin: 1em 0 0;color: #666;">
+            <p class="modal__block" style="font-size: 10px;margin: 1.75em 0 0;color: #666;">
               We won't post on Facebook/Twitter without <br>your permission and we don't spam.
             </p>
           </div><!-- eo modal body -->
@@ -356,7 +356,7 @@
 
   <div class="shelf shelf--in_app_follow_sources hidden">
     <header class="shelby__header clearfix" role="banner">
-      <a href="/" class="button_primer shelby-logo">
+      <a href="#" class="button_primer shelby-logo">
         <h1 class="shelby_logo">
           <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
         </h1>
@@ -460,11 +460,11 @@
         <div class="modal fin fin--left_top">
           <div class="modal__body modal__body--scroll">
             <h3 class="modal__h1">
-              Follow some interesting content
+              Follow the best of web video
             </h3>
 
             <p class="modal__block">
-              Follow at least 3 of our hand-picked content sources. We'll keep your stream fresh with high quality video.
+              Follow at least 3 of our hand-picked content sources. <br/>We'll keep your stream fresh with high quality video.
             </p>
 
             <ul class="list js-list-sources">
@@ -570,6 +570,9 @@
   $(document).ready(function(){
 
     State.DocumentState();
+
+    // lazy hack to disable logo clicks
+    $('.shelby-logo').on('click',function(){return false;});
 
     var $usernameLabel = $('.js-username');
 

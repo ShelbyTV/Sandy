@@ -81,6 +81,8 @@ p {
     .shelf--in_app_social {}
 
     .shelf--in_app_follow_sources {}
+
+    .shelf--in_app_social .modal,
     .shelf--in_app_follow_sources .modal {
       width: 500px;
     }
