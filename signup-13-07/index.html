@@ -444,7 +444,7 @@
             </article>
 
 
-            <ul class="list js-stream hidden">
+            <ul class="list js-stream js-add-sources hidden">
               <!-- filled in by underscore templating -->
             </ul>
 
@@ -486,7 +486,7 @@
     <li class="list__item">
       <div class="media_module source_card clearfix">
         <div class="media_image--rev">
-          <button class="button_primer button_command button_command--flexible button_gray source_card__button">Follow</button>
+          <button class="button_primer button_command button_command--flexible button_gray source_card__button js-shuffle">Follow</button>
         </div><!-- eo media_image--rev -->
 
         <div class="media_image">
@@ -502,55 +502,57 @@
   </script>
 
   <script id="abstractFrame" type="text/template">
-    <article id="51dcb74d88ba6b6544105613" class="animate_module frame frame-list-item">
-      <a href="#" onclick="return false;" class="frame-header js-frame-activate">
-        <h1 class="frame-title" title="Pacific Rim - ">
-          <%= video.title %>
-        </h1>
-      </a>
+    <li class="list__item">
+      <article id="51dcb74d88ba6b6544105613" class="animate_module frame frame-list-item">
+        <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+          <h1 class="frame-title" title="Pacific Rim - ">
+            <%= video.title %>
+          </h1>
+        </a>
 
-      <div class="frame-body-wrapper clearfix">
-        <div class="frame-body">
-          <!-- TODO: should maybe use the thumbnail module JST -->
-          <a href="#" onclick="return false;" class="image_module frame-thumbnail js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" style="background-image: url(<%= video.thumbnail_url %>);" role="img">
-            <img class="visuallyhidden" src="http://i1.ytimg.com/vi/p8pru0Pc0go/0.jpg" title="Pacific Rim - ">
-          </a>
-        </div><!-- eo .frame-body -->
-        <footer class="media_module frame-footer clearfix">
-          <a href="#" onclick="return false;" class="js-goto-user-page" data-user_nickname="LegendaryEnt">
-            <span class="image_module xuser-avatar xuser-avatar--twitter icon-twitter media_image" style="background-image: url(<%= frame.creator.user_image %>);" role="img">
-              <img src="http://a0.twimg.com/profile_images/1417967094/icon_normal.jpg" class="visuallyhidden" title="LegendaryEnt" alt="LegendaryEnt">
-            </span>
-          </a>
-
-          <div class="media_body">
-            <span class="xuser-data-timestamp">
-               Jul 10
-            </span>
-
-            <p class="xuser-data">
-              <a href="#" onclick="return false;" class="js-goto-user-page no-faux-link" data-user_nickname="LegendaryEnt"><strong><%= frame.creator.nickname %></strong></a>
-              via <span class="capitalize">twitter</span>
-            </p>
-
-            <p class="xuser-message">
-              RT @idriselba: Big week for #PacificRim! Tonight LA premiere. Friday US release. Right now: new trailer. <a href="http://t.co/t0Hm4eiClH" title="Go to external link http://t.co/t0Hm4eiClH" target="blank" class="js-track-event" data-ga_category="Frame" data-ga_action="Click on link in comment" data-ga_label="anonymous">http://t.co/t0Hm4eiClH</a>
-            </p>
-          </div><!-- eo .media_body -->
-        </footer><!-- eo .media_module-->
-      </div><!-- eo .frame-body-wrapper -->
-
-      <div class="frame-likes frame-external-subline icon-like icon-like--red js-frame-likes">
-        <ul class="list frame-likes-avatars js-username-liker-avatars-list">
-          <li>
-            <a class="frame-likes-link js-actor-avatar-link js-track-event" href="#" data-ga_category="Frame" data-ga_action="click avatar for liker" data-ga_label="elancers">
-              <img class="frame-likes-avatar" src="http://a0.twimg.com/profile_images/1305229121/Michael-2000_Rev_.jpg" title="elancers" alt="elancers">
+        <div class="frame-body-wrapper clearfix">
+          <div class="frame-body">
+            <!-- TODO: should maybe use the thumbnail module JST -->
+            <a href="#" onclick="return false;" class="image_module frame-thumbnail js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" style="background-image: url(<%= video.thumbnail_url %>);" role="img">
+              <img class="visuallyhidden" src="http://i1.ytimg.com/vi/p8pru0Pc0go/0.jpg" title="Pacific Rim - ">
             </a>
-          </li>
-        </ul>
-      </div><!-- eo frame-likes -->
-    </article>
-    <!-- end newvideocard -->
+          </div><!-- eo .frame-body -->
+          <footer class="media_module frame-footer clearfix">
+            <a href="#" onclick="return false;" class="js-goto-user-page" data-user_nickname="LegendaryEnt">
+              <span class="image_module xuser-avatar xuser-avatar--twitter icon-twitter media_image" style="background-image: url(<%= frame.creator.user_image %>);" role="img">
+                <img src="http://a0.twimg.com/profile_images/1417967094/icon_normal.jpg" class="visuallyhidden" title="LegendaryEnt" alt="LegendaryEnt">
+              </span>
+            </a>
+
+            <div class="media_body">
+              <span class="xuser-data-timestamp">
+                 Jul 10
+              </span>
+
+              <p class="xuser-data">
+                <a href="#" onclick="return false;" class="js-goto-user-page no-faux-link" data-user_nickname="LegendaryEnt"><strong><%= frame.creator.nickname %></strong></a>
+                via <span class="capitalize">twitter</span>
+              </p>
+
+              <p class="xuser-message">
+                RT @idriselba: Big week for #PacificRim! Tonight LA premiere. Friday US release. Right now: new trailer. <a href="http://t.co/t0Hm4eiClH" title="Go to external link http://t.co/t0Hm4eiClH" target="blank" class="js-track-event" data-ga_category="Frame" data-ga_action="Click on link in comment" data-ga_label="anonymous">http://t.co/t0Hm4eiClH</a>
+              </p>
+            </div><!-- eo .media_body -->
+          </footer><!-- eo .media_module-->
+        </div><!-- eo .frame-body-wrapper -->
+
+        <div class="frame-likes frame-external-subline icon-like icon-like--red js-frame-likes">
+          <ul class="list frame-likes-avatars js-username-liker-avatars-list">
+            <li>
+              <a class="frame-likes-link js-actor-avatar-link js-track-event" href="#" data-ga_category="Frame" data-ga_action="click avatar for liker" data-ga_label="elancers">
+                <img class="frame-likes-avatar" src="http://a0.twimg.com/profile_images/1305229121/Michael-2000_Rev_.jpg" title="elancers" alt="elancers">
+              </a>
+            </li>
+          </ul>
+        </div><!-- eo frame-likes -->
+      </article>
+      <!-- end newvideocard -->
+    </li>
     </script>
 
 
@@ -648,12 +650,28 @@
     // build sources list
     _(Dashboard.result).each(function(frame,index){
       if(frame.frame && frame.frame.video) {
-      console.log(frame.frame);
         Frames.push(_.template(AbstractFrame,{video: frame.frame.video, frame: frame.frame}));
       }
     });
     // append list to DOM
     $('.js-stream').html(Frames);
+
+
+    // shuffle order to feel like new content
+    // toggle text on follow button
+    $source      = $('.js-add-sources'),
+    $sourceItems = $source.children();
+
+    $('.js-shuffle').on('click', function(){
+      $source.toggleClass('hidden',false).find('.xuser-avatar').removeClass('icon-twitter').removeClass('icon-facebook');
+
+      $('.js-abstract-frame').toggleClass('hidden',true);
+
+      $source.html( _.shuffle($sourceItems) );
+
+      $(this).text(function(index,text){ return (text == 'Follow') ? 'Following' : 'Follow' });
+    });
+
   });
 </script>
 
