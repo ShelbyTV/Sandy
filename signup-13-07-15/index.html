@@ -129,7 +129,7 @@
     <div class="animate_module content_wrapper main-layout js-main-layout">
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
-          <div id="guide">
+          <div class="guide">
             <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item">
               <a href="#" onclick="return false;" class="frame-header js-frame-activate">
                 <h1 class="frame-title" title="Daft Punk - ">
@@ -186,16 +186,19 @@
         <div class="modal fin fin--left_top">
           <div class="modal__body">
             <h3 class="modal__h1">
-              Welcome to your perfect stream of video
+              Welcome to your Stream
             </h3>
 
             <p class="modal__block">
-              The videos shared by your friends and the people you follow show up here. Let's fill it up with video.
+              You don't have any sources of content yet!
             </p>
           </div><!-- eo modal body -->
 
           <div class="modal__foot">
-            <button class="button_primer button_command button_command--flexible button_command--sub button_green js-split-decision" data-go_to="in_app_social">Next</button>
+            <button class="button_primer button_command button_command--flexible button_command--sub button_green js-split-decision" data-go_to="in_app_social">
+              <span class="icon icon-roll"></span>
+              <span class="button_label">Add Video</span>
+            </button>
           </div><!-- eo modal foot -->
         </div><!-- eo modal block -->
       </div><!-- eo modal__wrapper -->
@@ -250,7 +253,7 @@
     <div class="animate_module content_wrapper main-layout js-main-layout">
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
-          <div id="guide">
+          <div class="guide">
             <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-social">
               <a href="#" onclick="return false;" class="frame-header js-frame-activate">
                 <h1 class="frame-title" title="Daft Punk - ">
@@ -321,35 +324,336 @@
         <div class="modal fin fin--left_top">
           <div class="modal__body">
             <h3 class="modal__h1">
-              Discover video you had no idea you were missing
+              Find video on other networks
             </h3>
 
             <p class="modal__block" style="margin-bottom: 1.5em;">
-              Connect Facebook and Twitter and we'll find videos your friends are already sharing but you might be missing.
+              We'll bring you the video your friends are sharing on other networks. <br><strong>We only grab the videos and we don't post or share anything without your permission.</strong>
             </p>
 
-            <button class="button_primer button_command button_command--social button_command--sub one-third button_facebook-blue js-connect-facebook">
+            <button class="button_primer button_command button_command--social button_command--sub one-third button_facebook-blue js-split-decision js-connect-facebook" data-go_to="in_app_social_facebook">
               <span class="icon icon-facebook"></span>
               <span class="button_label">Facebook</span>
             </button>
 
-            <button class="button_primer button_command button_command--social button_command--sub one-third button_twitter-blue js-connect-twitter">
+            <button class="button_primer button_command button_command--social button_command--sub one-third button_twitter-blue js-split-decision js-connect-twitter" data-go_to="in_app_social_twitter">
               <span class="icon icon-twitter"></span>
               <span class="button_label">Twitter</span>
             </button>
 
             <p class="modal__block" style="font-size: 12px;margin: 1.75em 0 0;color: #666;">
-              We won't post on Facebook/Twitter without <br>your permission and we don't spam.
+              Or you can <a href="#" class="js-split-decision" data-go_to="in_app_follow_sources">skip this step</a>.
             </p>
           </div><!-- eo modal body -->
 
-          <div class="modal__foot">
-            <button class="button_primer button_command button_command--flexible button_command--sub button_gray button_active js-split-decision js-skip-social" data-go_to="in_app_follow_sources">Skip</button>
-          </div><!-- eo modal foot -->
         </div><!-- eo modal block -->
       </div><!-- eo modal__wrapper -->
     </div><!-- eo main-layout -->
   </div><!-- eo shelf -->
+
+
+
+
+
+  <div class="shelf shelf--in_app_social_facebook hidden">
+    <header class="shelby__header clearfix" role="banner">
+      <a href="#" class="button_primer shelby-logo">
+        <h1 class="shelby_logo">
+          <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
+        </h1>
+      </a>
+      <nav id="js-guide-presentation-selector" class="guide-presentation-selector">
+        <div>
+          <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
+            <li class="list__item">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+                Stream
+              </button>
+            </li>
+
+            <li class="list__item js-community-menu">
+              <button class="app_nav__button js-community js-track-event" data-ga_category="Header" data-ga_action="Community" data-ga_label="matyus">
+                Community
+              </button>
+            </li>
+
+            <li class="list__item js-guide-me js-track-event" data-ga_category="Header" data-ga_action="Me" data-ga_label="matyus">
+              <button class="app_nav__button js-me">
+                Me
+              </button>
+            </li>
+
+            <li class="dropdown_module list__item secondary-item js-guide-settings">
+              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event">
+                <span style="background-image: url('images/avatar.png');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="images/avatar.png" class="visuallyhidden"></span>
+                  <span class="label js-username">matyus</span>
+                  <span class="icon-carrot"></span>
+              </button>
+            </li>
+          </ul><!-- eo guide-presentation-list -->
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="animate_module content_wrapper main-layout js-main-layout">
+      <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
+        <div id="js-guide-body" class="guide__body" style="top: 0px;">
+          <div class="guide">
+            <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-social">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - ">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
+
+            <ul class="list js-stream hidden">
+            </ul>
+          </div><!-- eo guide -->
+        </div>
+      </section><!-- eo .guide-wrapper -->
+
+      <section class="content_lining videoplayer__wrapper animate_module" role="main">
+        <!-- content filled in by children of MainLayoutView -->
+      </section><!-- eo .content_lining -->
+
+      <div class="modal__wrapper modal--social_facebook js-modal-facebook">
+        <div class="modal fin fin--left_top">
+          <div class="modal__body">
+            <h3 class="modal__h1">
+              Scanning Facebook…
+            </h3>
+
+            <ol class="list list--inline authing">
+              <li class="authing__step authing__step--connecting one-third">
+                Connecting
+              </li><!--
+              --><li class="authing__step authing__step--scanning one-third">
+                Scanning Feed
+              </li><!--
+              --><li class="authing__step authing__step--loading one-third">
+                Loading Videos
+              </li>
+            </ol>
+
+            <div class="progress progress--one-third js-progress-facebook"><span class="progress__indicator"></span></div>
+
+            <div class="results hidden js-results-facebook">
+              <p class="modal__block" style="margin-bottom: 1.1em; font-size: 1.4em; text-align: center;">
+                <strong>45 videos</strong> from <strong>40 friends</strong><br/>
+                <strong>3 of your friends</strong> also use Shelby!
+              </p>
+
+              <ul class="list hidden js-friends-list-facebook">
+                <!-- filled in by underscore -->
+              </ul>
+            </div>
+          </div><!-- eo modal body -->
+
+          <div class="modal__foot hidden">
+            <h4 class="modal__h2">
+              Next, scan Twitter
+            </h4>
+
+            <p class="modal__block">
+              <button class="button_primer button_command button_command--flexible button_twitter-blue">
+                <span class="icon icon-twitter"></span>
+                <span class="button_label">Twitter</span>
+              </button> or you can <a href="#" class="js-split-decision" data-go_to="in_app_follow_sources">skip this step</a>.
+            </p>
+          </div>
+        </div><!-- eo modal block -->
+      </div><!-- eo modal__wrapper -->
+    </div><!-- eo main-layout -->
+  </div><!-- eo shelf -->
+
+
+  <div class="shelf shelf--in_app_social_twitter hidden">
+    <header class="shelby__header clearfix" role="banner">
+      <a href="#" class="button_primer shelby-logo">
+        <h1 class="shelby_logo">
+          <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
+        </h1>
+      </a>
+      <nav id="js-guide-presentation-selector" class="guide-presentation-selector">
+        <div>
+          <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
+            <li class="list__item">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+                Stream
+              </button>
+            </li>
+
+            <li class="list__item js-community-menu">
+              <button class="app_nav__button js-community js-track-event" data-ga_category="Header" data-ga_action="Community" data-ga_label="matyus">
+                Community
+              </button>
+            </li>
+
+            <li class="list__item js-guide-me js-track-event" data-ga_category="Header" data-ga_action="Me" data-ga_label="matyus">
+              <button class="app_nav__button js-me">
+                Me
+              </button>
+            </li>
+
+            <li class="dropdown_module list__item secondary-item js-guide-settings">
+              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event">
+                <span style="background-image: url('images/avatar.png');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="images/avatar.png" class="visuallyhidden"></span>
+                  <span class="label js-username">matyus</span>
+                  <span class="icon-carrot"></span>
+              </button>
+            </li>
+          </ul><!-- eo guide-presentation-list -->
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="animate_module content_wrapper main-layout js-main-layout">
+      <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
+        <div id="js-guide-body" class="guide__body" style="top: 0px;">
+          <div class="guide">
+            <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-social">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - ">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
+
+            <ul class="list js-stream hidden">
+            </ul>
+          </div><!-- eo guide -->
+        </div>
+      </section><!-- eo .guide-wrapper -->
+
+      <section class="content_lining videoplayer__wrapper animate_module" role="main">
+        <!-- content filled in by children of MainLayoutView -->
+      </section><!-- eo .content_lining -->
+
+      <div class="modal__wrapper modal--social_facebook js-modal-twitter">
+        <div class="modal fin fin--left_top">
+          <div class="modal__body">
+            <h3 class="modal__h1">
+              Scanning Twitter
+            </h3>
+
+            <ol class="list list--inline authing">
+              <li class="authing__step authing__step--connecting one-third">
+                Connecting
+              </li><!--
+              --><li class="authing__step authing__step--scanning one-third">
+                Scanning Feed
+              </li><!--
+              --><li class="authing__step authing__step--loading one-third">
+                Loading Videos
+              </li>
+            </ol>
+
+            <div class="progress progress--one-third js-progress-twitter"><span class="progress__indicator"></span></div>
+
+            <div class="results hidden js-results-twitter">
+              <p class="modal__block" style="margin-bottom: 1.1em; font-size: 1.4em; text-align: center;">
+                <strong>45 videos</strong> from <strong>40 friends</strong><br/>
+                <strong>3 of your friends</strong> also use Shelby!
+              </p>
+
+              <ul class="list hidden js-friends-list-twitter">
+                <!-- filled in by underscore -->
+              </ul>
+            </div>
+          </div><!-- eo modal body -->
+
+          <div class="modal__foot hidden">
+            <h4 class="modal__h2">
+              Next, follow sources
+            </h4>
+
+            <p class="modal__block">
+              <button class="button_primer button_command button_command--flexible button_green js-split-decision" data-go_to="in_app_follow_sources">
+                <span class="icon icon-roll"></span>
+                <span class="button_label">Add Sources</span>
+              </button>
+            </p>
+          </div>
+        </div><!-- eo modal block -->
+      </div><!-- eo modal__wrapper -->
+    </div><!-- eo main-layout -->
+  </div><!-- eo shelf -->
+
 
 
 
@@ -398,10 +702,10 @@
     <div class="animate_module content_wrapper main-layout js-main-layout">
       <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
         <div id="js-guide-body" class="guide__body" style="top: 0px;">
-          <div id="guide">
+          <div class="guide">
             <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-sources">
               <a href="#" onclick="return false;" class="frame-header js-frame-activate">
-                <h1 class="frame-title" title="Daft Punk - " get="" lucky"="" -="" bass="" cover"="">
+                <h1 class="frame-title" title="Daft Punk - ">
                  Daft Punk - "Get Lucky" - Bass Cover
                 </h1>
               </a>
@@ -564,6 +868,7 @@
 
   <!-- dummy data -->
   <script src="js/signup.yml.js" type="text/javascript"></script>
+  <script src="js/friends.js" type="text/javascript"></script>
   <script src="js/dashboard.js" type="text/javascript"></script>
 
   <script>
@@ -596,46 +901,67 @@
     var $socialLoading = $('.js-social-loading'),
         $streamFilled  = $('.js-stream');
 
-    var loadStream;
+    var twitterKeyframe,facebookKeyframe;
+
+    var $twitterModal    = $('.js-modal-twitter'),
+        $twitterProgress = $('.js-progress-twitter'),
+        doneClass         = 'authing__step--done',
+        delay             = 0;
 
     $('.js-connect-twitter').on('click',function(){
-      $(this).removeClass('button_twitter-blue').addClass('button_gray');
-      $socialLoading
-        .toggleClass('hidden loading--facebook',false)
-        .toggleClass('loading--twitter',true);
+      twitterKeyframe = window.setTimeout(function(){
+          $twitterModal.find('.authing__step--connecting').addClass(doneClass);
+          $twitterProgress.toggleClass('progress--one-third',true);
+      }, delay + 2000);
 
-      $('.js-frame-social').toggleClass('hidden',true);
+      twitterKeyframe = window.setTimeout(function(){
+          $twitterModal.find('.authing__step--scanning').addClass(doneClass);
+          $twitterProgress.toggleClass('progress--one-third progress--two-third');
+      }, delay + 3000);
 
-      loadStream = window.setTimeout(function(){
-        $socialLoading.toggleClass('hidden',true);
-        $streamFilled.toggleClass('hidden',false);
-        window.clearTimeout(loadStream);
+      twitterKeyframe = window.setTimeout(function(){
+          $twitterModal.find('.authing__step--loading').addClass(doneClass);
+          $twitterProgress.toggleClass('progress--two-third progress--three-third');
+      }, delay + 4000);
 
-        $('.js-skip-social').trigger('click');
-        $('.js-abstract-frame').toggleClass('hidden',true);
-      }, 2000);
+      twitterKeyframe = window.setTimeout(function(){
+          $('.js-results-twitter').toggleClass('hidden',false);
+      }, delay + 5000);
+
+      twitterKeyframe = window.setTimeout(function(){
+          $('.js-friends-list-twitter').toggleClass('hidden',false);
+          $twitterModal.find('.modal__foot').toggleClass('hidden',false);
+      }, delay + 6000);
     });
 
+
+    var $facebookModal    = $('.js-modal-facebook'),
+        $facebookProgress = $('.js-progress-facebook');
+
     $('.js-connect-facebook').on('click',function(){
-      $(this).removeClass('button_facebook-blue').addClass('button_gray');
-      $socialLoading
-        .toggleClass('hidden loading--twitter',false)
-        .toggleClass('loading--facebook',true);
+      facebookKeyframe = window.setTimeout(function(){
+          $facebookModal.find('.authing__step--connecting').addClass(doneClass);
+          $facebookProgress.toggleClass('progress--one-third',true);
+      }, delay + 2000);
 
-      $('.js-frame-social').toggleClass('hidden',true);
+      facebookKeyframe = window.setTimeout(function(){
+          $facebookModal.find('.authing__step--scanning').addClass(doneClass);
+          $facebookProgress.toggleClass('progress--one-third progress--two-third');
+      }, delay + 3000);
 
-      loadStream = window.setTimeout(function(){
-        $socialLoading.toggleClass('hidden',true);
-        $streamFilled.toggleClass('hidden',false)
-                     .find('.xuser-avatar--twitter')
-                       .toggleClass('xuser-avatar--twitter xuser-avatar--facebook icon-twitter icon-facebook');
+      facebookKeyframe = window.setTimeout(function(){
+          $facebookModal.find('.authing__step--loading').addClass(doneClass);
+          $facebookProgress.toggleClass('progress--two-third progress--three-third');
+      }, delay + 4000);
 
-        window.clearTimeout(loadStream);
+      facebookKeyframe = window.setTimeout(function(){
+          $('.js-results-facebook').toggleClass('hidden',false);
+      }, delay + 5000);
 
-        $('.js-skip-social').trigger('click');
-        $('.js-abstract-frame').toggleClass('hidden',true);
-      }, 2000);
-
+      facebookKeyframe = window.setTimeout(function(){
+          $('.js-friends-list-facebook').toggleClass('hidden',false);
+          $facebookModal.find('.modal__foot').toggleClass('hidden',false);
+      }, delay + 6000);
     });
 
     // setup sources list
@@ -664,6 +990,13 @@
     // append list to DOM
     $('.js-stream').html(Frames);
 
+    var Friends = [];
+
+    _(friends).each(function(friend,index){
+      Friends.push(_.template(SourceCard,friend));
+    });
+
+    $('.js-friends-list-facebook, .js-friends-list-twitter').html(Friends).find('.js-shuffle').text('Following');
 
     // shuffle order to feel like new content
     // toggle text on follow button
