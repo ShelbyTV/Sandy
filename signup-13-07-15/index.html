@@ -324,11 +324,12 @@
         <div class="modal fin fin--left_top">
           <div class="modal__body">
             <h3 class="modal__h1">
-              Find video on other networks
+              Video you didn't know<br>
+              you were missing
             </h3>
 
             <p class="modal__block" style="margin-bottom: 1.5em;">
-              We'll bring you the video your friends are sharing on other networks. <br><strong>We only grab the videos and we don't post or share anything without your permission.</strong>
+              We'll bring you the video your friends are sharing on other networks. <strong>We only grab the videos and we don't post or share anything without your permission.</strong>
             </p>
 
             <button class="button_primer button_command button_command--social button_command--sub one-third button_facebook-blue js-split-decision js-connect-facebook" data-go_to="in_app_social_facebook">
@@ -493,7 +494,7 @@
             </h4>
 
             <p class="modal__block">
-              <button class="button_primer button_command button_command--flexible button_twitter-blue">
+              <button class="button_primer button_command button_command--flexible button_twitter-blue js-split-decision js-connect-twitter" data-go_to="in_app_social_twitter">
                 <span class="icon icon-twitter"></span>
                 <span class="button_label">Twitter</span>
               </button> or you can <a href="#" class="js-split-decision" data-go_to="in_app_follow_sources">skip this step</a>.
@@ -915,6 +916,9 @@
         delay             = 0;
 
     $('.js-connect-twitter').on('click',function(){
+
+      alert('This is where you\'d be prompted to sign-in from a Twitter.com pop-up window');
+
       twitterKeyframe = window.setTimeout(function(){
           $twitterModal.find('.authing__step--connecting').addClass(doneClass);
           $twitterProgress.toggleClass('progress--one-third',true);
@@ -945,6 +949,9 @@
         $facebookProgress = $('.js-progress-facebook');
 
     $('.js-connect-facebook').on('click',function(){
+
+      alert('This is where you\'d be prompted to sign-in from a Facebook.com pop-up window');
+
       facebookKeyframe = window.setTimeout(function(){
           $facebookModal.find('.authing__step--connecting').addClass(doneClass);
           $facebookProgress.toggleClass('progress--one-third',true);

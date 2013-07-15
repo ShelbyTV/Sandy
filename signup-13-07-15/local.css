@@ -205,7 +205,9 @@ p {
   font-size: 1.3em;
 }
 
-.modal__block {}
+.modal__block {
+  font-size: 1.1em;
+}
 
 .modal__button {}
 
