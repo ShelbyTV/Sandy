@@ -30,6 +30,10 @@ p {
 .button_command--sub {
   width: auto;
 }
+.button_command--block {
+  width: 100%;
+  text-align: center;
+}
 .one-third {
   width: 33.3333%;
 }
@@ -87,6 +91,7 @@ p {
 
     .shelf--in_app_social {}
 
+    .shelf--in_app_follow_sources .modal__foot,
     .shelf--in_app_social_twitter .modal__foot,
     .shelf--in_app_social_facebook .modal__foot {
       text-align: left;
