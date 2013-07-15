@@ -1,0 +1,687 @@
+<!doctype html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# shelbytv: http://ogp.me/ns/fb/shelbytv#" profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <title>shelby.tv | a smart personal way to enjoy video</title>
+  <link href="../fonts/icon/style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="local.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body class="shelby shelby--sandy">
+
+
+
+  <form class="shelf shelf--init js-next" data-go_to="in_app_welcome">
+    <div class="shelby__wrapper">
+      <div class="shelf__lining">
+        <div class="shelf__head">
+          <h2 class="shelf__h1" style="margin-top:4em;">
+            Get your perfect stream of video
+          </h2>
+        </div><!-- shelf__head -->
+
+        <div class="media_module shelf__body clearfix">
+          <div class="media_image media_image--form clearifx">
+            <div class="form_module clearfix">
+              <fieldset class="form_fieldset">
+                <label class="form_label" for="name">Full Name</label>
+                <span class="form_error js-form-error">Please enter your name</span>
+                <input class="form_input" id="name" name="name" placeholder="First and Last Name" type="text">
+              </fieldset>
+
+              <fieldset class="form_fieldset">
+                <label class="form_label" for="nickname">Username</label>
+                  <span class="form_error js-form-error">Please enter a username</span>
+                <input class="form_input" id="nickname" name="nickname" type="text">
+              </fieldset>
+
+              <fieldset class="form_fieldset">
+                <label class="form_label" for="primary_email">Email Address</label>
+                  <span class="form_error js-form-error">Please enter a valid email address</span>
+                <input class="form_input" id="primary_email" name="primary_email" placeholder="email@address.com" type="email">
+              </fieldset>
+
+              <fieldset class="form_fieldset">
+                <label class="form_label" for="password">Password</label>
+                <span class="form_error js-form-error">Password must be at least five characters</span>
+                <input class="form_input" id="password" name="password" placeholder="*******" type="password">
+                <span class="form__description">We never spam.</span>
+              </fieldset>
+
+              <fieldset type="submit" class="form_fieldset">
+                <input class="button_primer button_command button_command--wide button_green js-track-event" data-ga_action="Click Start Watching on Step 3" data-ga_category="Onboarding" name="commit" type="submit" value="Join Shelby">
+              </fieldset>
+
+              <p class="shelf__block">
+              </p>
+            </div><!-- eo form_module -->
+          </div><!-- media_image -->
+
+          <div class="media_body">
+            <ul class="list list--benefits">
+              <li class="benefit benefit--smart icon-like">
+                <h2>Personal recommendations</h2>
+                <p>Our recommendations get better as you and your friends Like, Share, and watch video on Shelby.</p>
+              </li>
+
+              <li class="benefit benefit--share icon-facebook">
+                <h2>People that matter</h2>
+                <p>Connect Facebook or Twitter and see how much great content your friends are sharing daily.</p>
+              </li>
+
+              <li class="benefit benefit--save icon-roll">
+                <h2>Pay it forward</h2>
+                <p>When you find something awesome, share it with your friends!</p>
+              </li>
+            </ul>
+          </div><!-- eo media_body -->
+        </div><!-- eo shelf__body -->
+      </div><!-- eo shelf__lining -->
+    </div><!-- eo shelby__wrapper -->
+  </form><!-- eo shelf -->
+
+
+
+
+
+  <div class="shelf shelf--in_app_welcome hidden">
+    <header class="shelby__header clearfix" role="banner">
+      <a href="#" class="button_primer shelby-logo">
+        <h1 class="shelby_logo">
+          <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
+        </h1>
+      </a>
+      <nav id="js-guide-presentation-selector" class="guide-presentation-selector">
+        <div>
+          <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
+            <li class="list__item">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+                Stream
+              </button>
+            </li>
+
+            <li class="list__item js-community-menu">
+              <button class="app_nav__button js-community js-track-event" data-ga_category="Header" data-ga_action="Community" data-ga_label="matyus">
+                Community
+              </button>
+            </li>
+
+            <li class="list__item js-guide-me js-track-event" data-ga_category="Header" data-ga_action="Me" data-ga_label="matyus">
+              <button class="app_nav__button js-me">
+                Me
+              </button>
+            </li>
+
+            <li class="dropdown_module list__item secondary-item js-guide-settings">
+              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event">
+                <span style="background-image: url('images/avatar.png');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="images/avatar.png" class="visuallyhidden"></span>
+                  <span class="label js-username">matyus</span>
+                  <span class="icon-carrot"></span>
+              </button>
+            </li>
+          </ul><!-- eo guide-presentation-list -->
+        </div>
+      </nav>
+    </header>
+
+    <div class="animate_module content_wrapper main-layout js-main-layout">
+      <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
+        <div id="js-guide-body" class="guide__body" style="top: 0px;">
+          <div id="guide">
+            <article id="51dc39b9b415cc3a53089ea2" class="animate_module frame frame--abstract frame-list-item">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - ">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link" data-user_nickname="jhubball"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
+
+          </div>
+        </div>
+      </section><!-- eo .guide-wrapper -->
+
+      <section class="content_lining videoplayer__wrapper animate_module" role="main">
+        <!-- content filled in by children of MainLayoutView -->
+      </section><!-- eo .content_lining -->
+
+      <div class="modal__wrapper modal--welcome">
+        <div class="modal fin fin--left_top">
+          <div class="modal__body">
+            <h3 class="modal__h1">
+              Welcome to your perfect stream of video
+            </h3>
+
+            <p class="modal__block">
+              The videos shared by your friends and the people you follow show up here. Let's fill it up with video.
+            </p>
+          </div><!-- eo modal body -->
+
+          <div class="modal__foot">
+            <button class="button_primer button_command button_command--flexible button_command--sub button_green js-split-decision" data-go_to="in_app_social">Next</button>
+          </div><!-- eo modal foot -->
+        </div><!-- eo modal block -->
+      </div><!-- eo modal__wrapper -->
+    </div><!-- eo main-layout -->
+  </div><!-- eo shelf -->
+
+
+
+
+
+  <div class="shelf shelf--in_app_social hidden">
+    <header class="shelby__header clearfix" role="banner">
+      <a href="#" class="button_primer shelby-logo">
+        <h1 class="shelby_logo">
+          <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
+        </h1>
+      </a>
+      <nav id="js-guide-presentation-selector" class="guide-presentation-selector">
+        <div>
+          <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
+            <li class="list__item">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+                Stream
+              </button>
+            </li>
+
+            <li class="list__item js-community-menu">
+              <button class="app_nav__button js-community js-track-event" data-ga_category="Header" data-ga_action="Community" data-ga_label="matyus">
+                Community
+              </button>
+            </li>
+
+            <li class="list__item js-guide-me js-track-event" data-ga_category="Header" data-ga_action="Me" data-ga_label="matyus">
+              <button class="app_nav__button js-me">
+                Me
+              </button>
+            </li>
+
+            <li class="dropdown_module list__item secondary-item js-guide-settings">
+              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event">
+                <span style="background-image: url('images/avatar.png');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="images/avatar.png" class="visuallyhidden"></span>
+                  <span class="label js-username">matyus</span>
+                  <span class="icon-carrot"></span>
+              </button>
+            </li>
+          </ul><!-- eo guide-presentation-list -->
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="animate_module content_wrapper main-layout js-main-layout">
+      <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
+        <div id="js-guide-body" class="guide__body" style="top: 0px;">
+          <div id="guide">
+            <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-social">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - ">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
+
+            <div class="loading hidden js-social-loading">
+              <img src="images/loading-explore.gif" class="loading__spinner" />
+
+              <p class="loading__block loading__block--twitter">
+                Connecting to Twitter…
+              </p>
+
+              <p class="loading__block loading__block--facebook">
+                Connecting to Facebook…
+              </p>
+            </div><!-- eo loading block -->
+
+            <ul class="list js-stream hidden">
+            </ul>
+          </div><!-- eo guide -->
+        </div>
+      </section><!-- eo .guide-wrapper -->
+
+      <section class="content_lining videoplayer__wrapper animate_module" role="main">
+        <!-- content filled in by children of MainLayoutView -->
+      </section><!-- eo .content_lining -->
+
+      <div class="modal__wrapper modal--welcome">
+        <div class="modal fin fin--left_top">
+          <div class="modal__body">
+            <h3 class="modal__h1">
+              Discover video you had no idea you were missing
+            </h3>
+
+            <p class="modal__block" style="margin-bottom: 1.5em;">
+              Connect Facebook and Twitter and we'll find videos your friends are already sharing but you might be missing.
+            </p>
+
+            <button class="button_primer button_command button_command--social button_command--sub one-third button_facebook-blue js-connect-facebook">
+              <span class="icon icon-facebook"></span>
+              <span class="button_label">Facebook</span>
+            </button>
+
+            <button class="button_primer button_command button_command--social button_command--sub one-third button_twitter-blue js-connect-twitter">
+              <span class="icon icon-twitter"></span>
+              <span class="button_label">Twitter</span>
+            </button>
+
+            <p class="modal__block" style="font-size: 12px;margin: 1.75em 0 0;color: #666;">
+              We won't post on Facebook/Twitter without <br>your permission and we don't spam.
+            </p>
+          </div><!-- eo modal body -->
+
+          <div class="modal__foot">
+            <button class="button_primer button_command button_command--flexible button_command--sub button_gray button_active js-split-decision js-skip-social" data-go_to="in_app_follow_sources">Skip</button>
+          </div><!-- eo modal foot -->
+        </div><!-- eo modal block -->
+      </div><!-- eo modal__wrapper -->
+    </div><!-- eo main-layout -->
+  </div><!-- eo shelf -->
+
+
+
+
+  <div class="shelf shelf--in_app_follow_sources hidden">
+    <header class="shelby__header clearfix" role="banner">
+      <a href="#" class="button_primer shelby-logo">
+        <h1 class="shelby_logo">
+          <span class="icon-mark"></span><span class="icon-type"></span><span class="ir">Shelby.tv</span>
+        </h1>
+      </a>
+      <nav id="js-guide-presentation-selector" class="guide-presentation-selector">
+        <div>
+          <ul class="js-content-selector list list--inline app_nav clearfix" style="display: block;">
+            <li class="list__item">
+              <button class="app_nav__button js-stream-button js-track-event" data-ga_category="Header" data-ga_action="Stream" data-ga_label="matyus">
+                Stream
+              </button>
+            </li>
+
+            <li class="list__item js-community-menu">
+              <button class="app_nav__button js-community js-track-event" data-ga_category="Header" data-ga_action="Community" data-ga_label="matyus">
+                Community
+              </button>
+            </li>
+
+            <li class="list__item js-guide-me js-track-event" data-ga_category="Header" data-ga_action="Me" data-ga_label="matyus">
+              <button class="app_nav__button js-me">
+                Me
+              </button>
+            </li>
+
+            <li class="dropdown_module list__item secondary-item js-guide-settings">
+              <button class="dropdown_button app_nav__button app_nav__button--settings js-track-event">
+                <span style="background-image: url('images/avatar.png');" class="image_module avatar avatar--inline avatar--tiny" role="img"><img src="images/avatar.png" class="visuallyhidden"></span>
+                  <span class="label js-username">matyus</span>
+                  <span class="icon-carrot"></span>
+              </button>
+            </li>
+          </ul><!-- eo guide-presentation-list -->
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="animate_module content_wrapper main-layout js-main-layout">
+      <section class="js-inactivity-preemption js-guide sidebar_module guide-wrapper clearfix animate_module" role="sidebar"><div id="js-guide" class="guide_module">
+        <div id="js-guide-body" class="guide__body" style="top: 0px;">
+          <div id="guide">
+            <article id="51dc39b9b415cc3a53089ea2" class="js-abstract-frame animate_module frame frame--abstract frame-list-item js-frame-sources">
+              <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+                <h1 class="frame-title" title="Daft Punk - " get="" lucky"="" -="" bass="" cover"="">
+                 Daft Punk - "Get Lucky" - Bass Cover
+                </h1>
+              </a>
+
+              <div class="frame-body-wrapper clearfix">
+                <div class="frame-body">
+                  <span class="image_module frame-thumbnail icon-play js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" role="img"></span>
+                </div><!-- eo .frame-body -->
+
+                <footer class="media_module frame-footer clearfix">
+                  <span class="image_module xuser-avatar media_image" style="" role="img"></span>
+
+                  <div class="media_body">
+                    <span class="xuser-data-timestamp">2m ago</span>
+
+                    <p class="xuser-data">
+                      <span class="js-goto-user-page no-faux-link" data-user_nickname="jhubball"><strong>reece</strong></span>
+                    </p>
+
+                    <p class="xuser-message">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptas, explicabo id vero ipsam perspiciatie
+                    </p>
+                  </div><!-- eo .media_body -->
+                </footer><!-- eo .media_module-->
+              </div><!-- eo .frame-body-wrapper -->
+
+              <div class="frame-likes frame-external-subline icon-like js-frame-likes">
+                <ul class="list frame-likes-avatars js-liker-avatars-list">
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                  <li>
+                    <span class="image_module avatar avatar--tiny"></span>
+                  </li>
+                </ul>
+              </div><!-- eo frame-likes -->
+            </article>
+
+
+            <ul class="list js-stream js-add-sources hidden">
+              <!-- filled in by underscore templating -->
+            </ul>
+
+          </div>
+        </div>
+      </section><!-- eo .guide-wrapper -->
+
+      <section class="content_lining videoplayer__wrapper animate_module" role="main">
+        <!-- content filled in by children of MainLayoutView -->
+      </section><!-- eo .content_lining -->
+
+      <div class="modal__wrapper modal--welcome">
+        <div class="modal fin fin--left_top">
+          <div class="modal__body modal__body--scroll">
+            <h3 class="modal__h1">
+              Follow the best of web video
+            </h3>
+
+            <p class="modal__block">
+              Follow at least 3 of our hand-picked content sources. <br/>We'll keep your stream fresh with high quality video.
+            </p>
+
+            <ul class="list js-list-sources">
+              <!-- filled in by underscore templating -->
+            </ul>
+
+          </div><!-- eo modal body -->
+
+          <div class="modal__foot">
+            <a href="http://shelby.tv/community" class="button_primer button_command button_command--flexible button_green">Start Watching</a>
+          </div><!-- eo modal foot -->
+        </div><!-- eo modal block -->
+      </div><!-- eo modal__wrapper -->
+    </div><!-- eo main-layout -->
+  </div><!-- eo shelf -->
+
+
+  <script id="sourceCard" type="text/template">
+    <li class="list__item">
+      <div class="media_module source_card clearfix">
+        <div class="media_image--rev">
+          <button class="button_primer button_command button_command--flexible button_gray source_card__button js-shuffle">Follow</button>
+        </div><!-- eo media_image--rev -->
+
+        <div class="media_image">
+          <img src="<%= avatar %>" class="source_card__image" />
+        </div><!-- eo media_image -->
+
+        <div class="media_body">
+          <h3 class="source_card__h1"><%= nickname %></h3>
+          <p class="source_card__block"><%= description %></p>
+        </div>
+      </div><!-- eo source card -->
+    </li>
+  </script>
+
+  <script id="abstractFrame" type="text/template">
+    <li class="list__item">
+      <article id="51dcb74d88ba6b6544105613" class="animate_module frame frame-list-item">
+        <a href="#" onclick="return false;" class="frame-header js-frame-activate">
+          <h1 class="frame-title" title="Pacific Rim - ">
+            <%= video.title %>
+          </h1>
+        </a>
+
+        <div class="frame-body-wrapper clearfix">
+          <div class="frame-body">
+            <!-- TODO: should maybe use the thumbnail module JST -->
+            <a href="#" onclick="return false;" class="image_module frame-thumbnail js-frame-activate js-track-event" data-ga_category="Frame" data-ga_action="Click frame to play" data-ga_label="anonymous" style="background-image: url(<%= video.thumbnail_url %>);" role="img">
+              <img class="visuallyhidden" src="http://i1.ytimg.com/vi/p8pru0Pc0go/0.jpg" title="Pacific Rim - ">
+            </a>
+          </div><!-- eo .frame-body -->
+          <footer class="media_module frame-footer clearfix">
+            <a href="#" onclick="return false;" class="js-goto-user-page" data-user_nickname="LegendaryEnt">
+              <span class="image_module xuser-avatar xuser-avatar--twitter icon-twitter media_image" style="background-image: url(<%= frame.creator.user_image %>);" role="img">
+                <img src="http://a0.twimg.com/profile_images/1417967094/icon_normal.jpg" class="visuallyhidden" title="LegendaryEnt" alt="LegendaryEnt">
+              </span>
+            </a>
+
+            <div class="media_body">
+              <span class="xuser-data-timestamp">
+                 Jul 10
+              </span>
+
+              <p class="xuser-data">
+                <a href="#" onclick="return false;" class="js-goto-user-page no-faux-link" data-user_nickname="LegendaryEnt"><strong><%= frame.creator.nickname %></strong></a>
+                via <span class="capitalize">twitter</span>
+              </p>
+
+              <p class="xuser-message">
+                RT @idriselba: Big week for #PacificRim! Tonight LA premiere. Friday US release. Right now: new trailer. <a href="http://t.co/t0Hm4eiClH" title="Go to external link http://t.co/t0Hm4eiClH" target="blank" class="js-track-event" data-ga_category="Frame" data-ga_action="Click on link in comment" data-ga_label="anonymous">http://t.co/t0Hm4eiClH</a>
+              </p>
+            </div><!-- eo .media_body -->
+          </footer><!-- eo .media_module-->
+        </div><!-- eo .frame-body-wrapper -->
+
+        <div class="frame-likes frame-external-subline icon-like icon-like--red js-frame-likes">
+          <ul class="list frame-likes-avatars js-username-liker-avatars-list">
+            <li>
+              <a class="frame-likes-link js-actor-avatar-link js-track-event" href="#" data-ga_category="Frame" data-ga_action="click avatar for liker" data-ga_label="elancers">
+                <img class="frame-likes-avatar" src="http://a0.twimg.com/profile_images/1305229121/Michael-2000_Rev_.jpg" title="elancers" alt="elancers">
+              </a>
+            </li>
+          </ul>
+        </div><!-- eo frame-likes -->
+      </article>
+      <!-- end newvideocard -->
+    </li>
+    </script>
+
+
+  <script src="../js/underscore.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-2.0.0.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-parseparams.js" type="text/javascript"></script>
+  <script src="../js/jquery-hashchange.js" type="text/javascript"></script>
+  <script src="../js/sandy-generic-interactions.js" type="text/javascript"></script>
+
+  <!-- dummy data -->
+  <script src="js/signup.yml.js" type="text/javascript"></script>
+  <script src="js/dashboard.js" type="text/javascript"></script>
+
+  <script>
+  $(document).ready(function(){
+
+    State.DocumentState();
+
+    $('.form_input').on('blur',function(){ $(this).attr('required','required'); });
+
+    // lazy hack to disable logo clicks
+    $('.shelby-logo').on('click',function(){return false;});
+
+    var $usernameLabel = $('.js-username');
+
+    $('.js-next').on('submit',function(){
+      //basic handling already applied: sandy-generic-interations.js
+      //this class should be attached to a shelf that is a <form>
+
+      //fired on signup form submit, update entered username for in-app realness
+      var nickname = $('#nickname').val();
+      $usernameLabel.html(nickname);
+    });
+
+    $('.js-split-decision').on('click',function(){
+      //basic handling already applied: sandy-generic-interations.js
+    //attached to specific buttons. to progress to new 'pages'
+    });
+
+
+    var $socialLoading = $('.js-social-loading'),
+        $streamFilled  = $('.js-stream');
+
+    var loadStream;
+
+    $('.js-connect-twitter').on('click',function(){
+      $(this).removeClass('button_twitter-blue').addClass('button_gray');
+      $socialLoading
+        .toggleClass('hidden loading--facebook',false)
+        .toggleClass('loading--twitter',true);
+
+      $('.js-frame-social').toggleClass('hidden',true);
+
+      loadStream = window.setTimeout(function(){
+        $socialLoading.toggleClass('hidden',true);
+        $streamFilled.toggleClass('hidden',false);
+        window.clearTimeout(loadStream);
+
+        $('.js-skip-social').trigger('click');
+        $('.js-abstract-frame').toggleClass('hidden',true);
+      }, 2000);
+    });
+
+    $('.js-connect-facebook').on('click',function(){
+      $(this).removeClass('button_facebook-blue').addClass('button_gray');
+      $socialLoading
+        .toggleClass('hidden loading--twitter',false)
+        .toggleClass('loading--facebook',true);
+
+      $('.js-frame-social').toggleClass('hidden',true);
+
+      loadStream = window.setTimeout(function(){
+        $socialLoading.toggleClass('hidden',true);
+        $streamFilled.toggleClass('hidden',false)
+                     .find('.xuser-avatar--twitter')
+                       .toggleClass('xuser-avatar--twitter xuser-avatar--facebook icon-twitter icon-facebook');
+
+        window.clearTimeout(loadStream);
+
+        $('.js-skip-social').trigger('click');
+        $('.js-abstract-frame').toggleClass('hidden',true);
+      }, 2000);
+
+    });
+
+    // setup sources list
+    var SourceCard = $('#sourceCard').html(),
+        Cards = [];
+    // build sources list
+    _(sources).each(function(category,index){
+      _(category.rolls).each(function(source,index){
+        Cards.push(_.template(SourceCard,source));
+      });
+    });
+
+    Cards.push('<li style="text-align:center;padding-top:1em;"><button class="button_primer button_command button_command--flexible button_gray">Show More…</button>');
+    // append list to DOM
+    $('.js-list-sources').html(Cards);
+
+    // setup stream list
+    var AbstractFrame = $('#abstractFrame').html(),
+        Frames = [];
+    // build sources list
+    _(Dashboard.result).each(function(frame,index){
+      if(frame.frame && frame.frame.video) {
+        Frames.push(_.template(AbstractFrame,{video: frame.frame.video, frame: frame.frame}));
+      }
+    });
+    // append list to DOM
+    $('.js-stream').html(Frames);
+
+
+    // shuffle order to feel like new content
+    // toggle text on follow button
+    $source      = $('.js-add-sources'),
+    $sourceItems = $source.children();
+
+    $('.js-shuffle').on('click', function(){
+      $source.toggleClass('hidden',false).find('.xuser-avatar').removeClass('icon-twitter').removeClass('icon-facebook');
+
+      $('.js-abstract-frame').toggleClass('hidden',true);
+
+      $source.html( _.shuffle($sourceItems) );
+
+      $(this).text(function(index,text){ return (text == 'Follow') ? 'Following' : 'Follow' });
+    });
+
+  });
+</script>
+
+</body>
+</html>
