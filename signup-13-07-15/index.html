@@ -942,6 +942,12 @@
           $('.js-friends-list-twitter').toggleClass('hidden',false);
           $twitterModal.find('.modal__foot').toggleClass('hidden',false);
       }, delay + 6000);
+
+      twitterKeyframe = window.setTimeout(function(){
+          $('.shelf--in_app_social_twitter .js-stream, .js-abstract-frame').toggleClass('hidden');
+      }, delay + 7000);
+
+
     });
 
 
@@ -949,6 +955,8 @@
         $facebookProgress = $('.js-progress-facebook');
 
     $('.js-connect-facebook').on('click',function(){
+
+      $('.shelf--in_app_social_facebook .js-stream').find('.xuser-avatar').toggleClass('icon-twitter icon-facebook xuser-avatar--twitter xuser-avatar--facebook');
 
       alert('This is where you\'d be prompted to sign-in from a Facebook.com pop-up window');
 
@@ -975,6 +983,10 @@
           $('.js-friends-list-facebook').toggleClass('hidden',false);
           $facebookModal.find('.modal__foot').toggleClass('hidden',false);
       }, delay + 6000);
+
+      facebookKeyframe = window.setTimeout(function(){
+          $('.shelf--in_app_social_facebook .js-stream, .js-abstract-frame').toggleClass('hidden');
+      }, delay + 7000);
     });
 
     // setup sources list

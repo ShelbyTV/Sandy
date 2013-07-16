@@ -102,7 +102,10 @@ p {
 
     .shelf--in_app_follow_sources {}
 
-    .shelf--in_app_social .modal,
+    .shelf--in_app_social .modal {
+      width: 460px;
+    }
+
     .shelf--in_app_follow_sources .modal {
       width: 500px;
     }
@@ -168,8 +171,6 @@ p {
   text-align: left;
   width: 460px;
 }
-    .modal--welcome {}
-    .modal--social_facebook {}
 
 .modal:before {
   z-index: 1;
