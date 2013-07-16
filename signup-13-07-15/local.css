@@ -300,9 +300,6 @@ p {
     .frame--abstract .icon-like {
       color: #aaa;
     }
-    .frame--abstract .icon-like:before {
-      vertical-align: 4px;
-    }
     .frame--abstract .avatar--tiny {
       border: none;
       height: 2em;
@@ -358,14 +355,23 @@ p {
       content: "…";
       display: block;
       font-size: 2em;
+      height: 2em;
     }
     .authing__step--connecting {}
     .authing__step--connecting:before {
     }
     .authing__step--scanning {}
     .authing__step--loading{}
+    .authing__step--processing:before{
+      content: "\0020";
+      background-color: white;
+      background-image: url('images/ajax-loader.gif');
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
     .authing__step--done:before {
       content: "\2713";
+      background: none transparent;
     }
 
 

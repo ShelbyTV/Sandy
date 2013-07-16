@@ -912,12 +912,17 @@
 
     var $twitterModal    = $('.js-modal-twitter'),
         $twitterProgress = $('.js-progress-twitter'),
-        doneClass         = 'authing__step--done',
-        delay             = 0;
+        doneClass        = 'authing__step--done',
+        loadingClass     = 'authing__step--processing',
+        delay            = 0;
 
     $('.js-connect-twitter').on('click',function(){
 
       alert('This is where you\'d be prompted to sign-in from a Twitter.com pop-up window');
+
+      twitterKeyframe = window.setTimeout(function(){
+          $twitterModal.find('.authing__step--connecting').addClass(loadingClass);
+      }, delay + 0);
 
       twitterKeyframe = window.setTimeout(function(){
           $twitterModal.find('.authing__step--connecting').addClass(doneClass);
@@ -925,9 +930,17 @@
       }, delay + 2000);
 
       twitterKeyframe = window.setTimeout(function(){
+          $twitterModal.find('.authing__step--scanning').addClass(loadingClass);
+      }, delay + 3000);
+
+      twitterKeyframe = window.setTimeout(function(){
           $twitterModal.find('.authing__step--scanning').addClass(doneClass);
           $twitterProgress.toggleClass('progress--one-third progress--two-third');
       }, delay + 3000);
+
+      twitterKeyframe = window.setTimeout(function(){
+          $twitterModal.find('.authing__step--loading').addClass(loadingClass);
+      }, delay + 4000);
 
       twitterKeyframe = window.setTimeout(function(){
           $twitterModal.find('.authing__step--loading').addClass(doneClass);
@@ -961,13 +974,25 @@
       alert('This is where you\'d be prompted to sign-in from a Facebook.com pop-up window');
 
       facebookKeyframe = window.setTimeout(function(){
+          $facebookModal.find('.authing__step--connecting').addClass(loadingClass);
+      }, delay + 0);
+
+      facebookKeyframe = window.setTimeout(function(){
           $facebookModal.find('.authing__step--connecting').addClass(doneClass);
           $facebookProgress.toggleClass('progress--one-third',true);
       }, delay + 2000);
 
       facebookKeyframe = window.setTimeout(function(){
+          $facebookModal.find('.authing__step--scanning').addClass(loadingClass);
+      }, delay + 2000);
+
+      facebookKeyframe = window.setTimeout(function(){
           $facebookModal.find('.authing__step--scanning').addClass(doneClass);
           $facebookProgress.toggleClass('progress--one-third progress--two-third');
+      }, delay + 3000);
+
+      facebookKeyframe = window.setTimeout(function(){
+          $facebookModal.find('.authing__step--loading').addClass(loadingClass);
       }, delay + 3000);
 
       facebookKeyframe = window.setTimeout(function(){
